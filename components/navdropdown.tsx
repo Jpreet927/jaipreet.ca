@@ -18,9 +18,7 @@ const NavDropDown = () => {
                     <Link
                         href="/portfolio/development"
                         className={
-                            path === "/portfolio/development"
-                                ? "text-text-blue font-bold"
-                                : ""
+                            path === "/portfolio/development" ? "font-bold" : ""
                         }
                     >
                         Development
@@ -30,9 +28,7 @@ const NavDropDown = () => {
                     <Link
                         href="/portfolio/design"
                         className={
-                            path === "/portfolio/design"
-                                ? "text-text-blue font-bold"
-                                : ""
+                            path === "/portfolio/design" ? "font-bold" : ""
                         }
                     >
                         Design
@@ -42,9 +38,7 @@ const NavDropDown = () => {
                     <Link
                         href="/portfolio/photography"
                         className={
-                            path === "/portfolio/photography"
-                                ? "text-text-blue font-bold"
-                                : ""
+                            path === "/portfolio/photography" ? "font-bold" : ""
                         }
                     >
                         Photography
