@@ -10,6 +10,7 @@ module.exports = {
             colors: {
                 "text-primary": "var(--text-primary)",
                 "text-blue": "var(--text-blue)",
+                "grid-cyan": "var(--grid-cyan)",
             },
             backgroundImage: {
                 "hero-image": "url('../assets/images/Jaipreet-Hero-Image.jpg')",
