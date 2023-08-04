@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/logos/JpreetLogo.png";
 import NavDropDown from "./navdropdown";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Navbar = () => {
     const path: String = usePathname();
@@ -20,11 +21,11 @@ const Navbar = () => {
                         alt="Jpreet Logo"
                         className="flex-shrink-0"
                         fill={true}
-                        objectFit="contain"
+                        style={{ objectFit: "contain" }}
                     />
                 </div>
-                <ul className="flex gap-24">
-                    <li>
+                <ul className="flex gap-24 h-[80px] items-center">
+                    <li className="flex items-center h-full">
                         <Link
                             href="/"
                             className={path === "/" ? "font-bold" : ""}
@@ -33,14 +34,20 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li
-                        className="relative"
+                        className="relative flex items-center gap-2 group h-full"
                         onMouseEnter={() => setDropDownVisible(true)}
                         onMouseLeave={() => setDropDownVisible(false)}
                     >
-                        Portfolio
-                        {dropdownVisible && <NavDropDown />}
+                        Portfolio{" "}
+                        <KeyboardArrowDownIcon className="group-hover:rotate-180 transition-transform" />
+                        {dropdownVisible && (
+                            <NavDropDown
+                                dropdownVisible={dropdownVisible}
+                                setDropDownVisible={setDropDownVisible}
+                            />
+                        )}
                     </li>
-                    <li>
+                    <li className="flex items-center h-full">
                         <Link
                             href="/about"
                             className={path === "/about" ? "font-bold" : ""}

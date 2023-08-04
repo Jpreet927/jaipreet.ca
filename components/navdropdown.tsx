@@ -2,17 +2,20 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
-const NavDropDown = () => {
+interface props {
+    dropdownVisible: boolean;
+    setDropDownVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const NavDropDown = ({ dropdownVisible, setDropDownVisible }: props) => {
     const path: String = usePathname();
-    const [dropdownVisible, setDropdownVisible] = useState(true);
 
     return (
-        dropdownVisible && (
+        <div className="absolute top-16 right-0 bg-black bg-opacity-50 backdrop-blur-xl py-8 px-12 w-[250px] rounded-lg transition-all">
             <ul
-                className="absolute top-0 right-0 flex flex-col gap-4 text-right py-12"
-                onClick={() => setDropdownVisible(false)}
+                className="flex flex-col gap-4"
+                onClick={() => setDropDownVisible(false)}
             >
                 <li>
                     <Link
@@ -45,7 +48,7 @@ const NavDropDown = () => {
                     </Link>
                 </li>
             </ul>
-        )
+        </div>
     );
 };
 
