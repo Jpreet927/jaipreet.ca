@@ -4,8 +4,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Hero = () => {
     return (
-        <div className="bg-hero-image bg-cover bg-center h-screen w-screen flex flex-col justify-center px-64 overflow-y-hidden">
-            <div className="flex flex-col gap-4">
+        <div className="bg-hero-image bg-cover bg-center h-screen w-screen flex flex-col justify-center xl:px-64 lg:px-32 md:px-16 px-8 overflow-y-hidden">
+            <div className="flex flex-col gap-4 sm:text-left text-center">
                 <h1 className={`${playfair.className} text-7xl font-bold`}>
                     Hey, I'm Jaipreet
                 </h1>
@@ -13,12 +13,12 @@ const Hero = () => {
                     I’m a software developer & a graphic designer.
                 </p>
             </div>
-            <div className="flex justify-between items-end absolute left-0 bottom-0 w-full px-64 py-24">
+            <div className="flex justify-between items-end absolute left-0 bottom-0 w-full xl:px-64 lg:px-32 md:px-16 px-8 py-24">
                 <p>
                     Based in <br />{" "}
                     <span className="font-bold">Toronto, ON</span>
                 </p>
-                <div className="flex gap-24 transition-opacity">
+                <div className="md:flex hidden lg:gap-24 gap-8 transition-opacity">
                     <div className="flex gap-2 items-center">
                         <ArrowForwardIcon />
                         <a

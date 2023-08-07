@@ -11,15 +11,34 @@ module.exports = {
                 "text-primary": "var(--text-primary)",
                 "text-blue": "var(--text-blue)",
                 "grid-cyan": "var(--grid-cyan)",
+                background: "var(--background)",
+                "background-lighter": "var(--background-lighter)",
+                "gradient-1": "var(--gradient-1)",
+                "gradient-2": "var(--gradient-2)",
+                "gradient-3": "var(--gradient-3)",
+                "gradient-4": "var(--gradient-4)",
             },
             backgroundImage: {
                 "hero-image": "url('../assets/images/Jaipreet-Hero-Image.jpg')",
             },
-            // backgroundImage: {
-            //     "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-            //     "gradient-conic":
-            //         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-            // },
+            keyframes: {
+                gradientPulse: {
+                    "0%, 100%": {
+                        transform: "scale(1) translateY(50%) translateX(50%)",
+                        opacity: 1,
+                    },
+                    "50%": {
+                        transform: "scale(1.2) translateY(55%) translateX(55%)",
+                        opacity: 0.9,
+                    },
+                },
+            },
+            animation: {
+                "gradient-pulse-1": "gradientPulse 5s ease-in-out infinite",
+                "gradient-pulse-2": "gradientPulse 3s ease-in-out infinite",
+                "gradient-pulse-3": "gradientPulse 4s ease-in-out infinite",
+                "gradient-pulse-4": "gradientPulse 6s ease-in-out infinite",
+            },
         },
     },
     plugins: [],

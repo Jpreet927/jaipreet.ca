@@ -55,10 +55,10 @@ const Navbar = () => {
                     </div>
                 </div>
                 <ul
-                    className={`flex sm:flex-row flex-col sm:gap-24 gap-12 sm:h-[80px] h-full justify-center items-center sm:opacity-100 transition-opacity ease-in-out duration-300 ${
+                    className={`sm:flex sm:flex-row flex-col sm:gap-24 gap-12 sm:h-[80px] h-full justify-center items-center sm:opacity-100 transition-opacity ease-in-out duration-300 ${
                         mobileViewVisible
-                            ? "z-10 opacity-100"
-                            : "-z-10 opacity-0 hidden"
+                            ? "opacity-100f flex"
+                            : "opacity-0 hidden"
                     }`}
                 >
                     <li
