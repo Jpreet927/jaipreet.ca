@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
+import ViewQuiltOutlinedIcon from "@mui/icons-material/ViewQuiltOutlined";
+import CameraEnhanceOutlinedIcon from "@mui/icons-material/CameraEnhanceOutlined";
 
 interface props {
     dropdownVisible: boolean;
@@ -12,9 +15,9 @@ const NavDropDown = ({ dropdownVisible, setDropDownVisible }: props) => {
     const path: String = usePathname();
 
     return (
-        <div className="absolute top-16 right-0 bg-black bg-opacity-50 backdrop-blur-xl py-8 px-12 w-[250px] rounded-lg transition-all">
+        <div className="absolute top-16 right-0 bg-black bg-opacity-50 backdrop-blur-xl p-4 w-[250px] rounded-lg transition-all">
             <ul
-                className="flex flex-col gap-4"
+                className="flex flex-col"
                 onClick={() => setDropDownVisible(false)}
             >
                 <li>
@@ -24,7 +27,10 @@ const NavDropDown = ({ dropdownVisible, setDropDownVisible }: props) => {
                             path === "/portfolio/development" ? "font-bold" : ""
                         }
                     >
-                        Development
+                        <div className="flex gap-2 hover:bg-black/25 py-2 px-4 rounded-lg transition ease-out duration-500">
+                            <CodeOutlinedIcon />
+                            <p>Development</p>
+                        </div>
                     </Link>
                 </li>
                 <li>
@@ -34,7 +40,10 @@ const NavDropDown = ({ dropdownVisible, setDropDownVisible }: props) => {
                             path === "/portfolio/design" ? "font-bold" : ""
                         }
                     >
-                        Design
+                        <div className="flex gap-2 hover:bg-black/25 py-2 px-4 rounded-lg transition ease-out duration-500">
+                            <ViewQuiltOutlinedIcon />
+                            <p>Design</p>
+                        </div>
                     </Link>
                 </li>
                 <li>
@@ -44,7 +53,10 @@ const NavDropDown = ({ dropdownVisible, setDropDownVisible }: props) => {
                             path === "/portfolio/photography" ? "font-bold" : ""
                         }
                     >
-                        Photography
+                        <div className="flex gap-2 hover:bg-black/25 py-2 px-4 rounded-lg transition ease-out duration-500">
+                            <CameraEnhanceOutlinedIcon />
+                            <p>Photography</p>
+                        </div>
                     </Link>
                 </li>
             </ul>
