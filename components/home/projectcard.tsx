@@ -4,7 +4,7 @@ import lrr from "@/assets/images/LRR-Gameday.png";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import Link from "next/link";
 
-interface Project {
+export interface Project {
     title: string;
     description: string;
     category: string;

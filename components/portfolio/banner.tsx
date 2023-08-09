@@ -11,7 +11,7 @@ const Banner = ({
     title: string;
 }) => {
     return (
-        <div className="relative h-[66vh] flex items-center w-screen bg-background overflow-hidden">
+        <div className="relative h-[50vh] flex items-center w-screen bg-background overflow-hidden">
             <div className="absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-30">
                 <h1 className={`${playfair.className} text-6xl font-bold`}>
                     {title}

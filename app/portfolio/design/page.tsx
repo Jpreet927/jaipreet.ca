@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Banner from "@/components/portfolio/banner";
 import { artwork, projects } from "@/data/design";
-import Image from "next/image";
-import Carousel from "@/components/home/carousel";
+import Carousel from "@/components/portfolio/carousel";
+import ProjectCard from "@/components/home/projectcard";
+import GalleryImage from "@/components/portfolio/galleryImage";
 
 const DesignPage = () => {
     const [carouselVisible, setCarouselVisible] = useState(false);
@@ -29,9 +30,9 @@ const DesignPage = () => {
                         </h3>
                         <div className="bg-white/50 h-[1px] w-[90%]"></div>
                     </div>
-                    <div className="grid grid-cols-3 gap-6">
+                    <div className="grid grid-cols-2 gap-6">
                         {projects.map((img) => (
-                            <Image src={img.src} alt={img.title} />
+                            <ProjectCard project={img} />
                         ))}
                     </div>
                 </div>
@@ -44,10 +45,7 @@ const DesignPage = () => {
                     </div>
                     <div className="gap-[16px] columns-3">
                         {artwork.map((img, index) => (
-                            <Image
-                                src={img.src}
-                                alt={img.title}
-                                style={{ marginBottom: "16px" }}
+                            <div
                                 onClick={() => {
                                     setCarouselVisible(true);
                                     setCurrentIndex(index);
@@ -57,7 +55,9 @@ const DesignPage = () => {
                                         behavior: "smooth",
                                     });
                                 }}
-                            />
+                            >
+                                <GalleryImage img={img} />
+                            </div>
                         ))}
                     </div>
                 </div>
