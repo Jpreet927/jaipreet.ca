@@ -8,7 +8,7 @@ export interface Project {
     title: string;
     description: string;
     category: string;
-    thumbnail: StaticImageData;
+    src: StaticImageData;
     link: string;
 }
 
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 </p>
             </div>
             <Image
-                src={project.thumbnail}
+                src={project.src}
                 alt={project.title}
                 style={{ objectFit: "cover", height: "100%" }}
             />
