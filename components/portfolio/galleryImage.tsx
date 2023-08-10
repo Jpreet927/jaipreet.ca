@@ -10,6 +10,7 @@ const GalleryImage = ({ img }: { img: Artwork }) => {
                 src={img.src}
                 alt={img.title}
                 style={{ marginBottom: "16px" }}
+                quality={10}
             />
         </div>
     );

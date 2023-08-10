@@ -1,32 +1,34 @@
 "use client";
 
 import React, { useState } from "react";
-import { artwork } from "@/data/design";
+import { Artwork, artwork } from "@/data/design";
 import Image from "next/image";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Carousel = ({
+    images,
     index = 0,
     closeCarousel,
 }: {
+    images: Artwork[];
     index: number;
     closeCarousel: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
     const [currentIndex, setCurrentIndex] = useState(index);
-    const [currentImage, setCurrentImage] = useState(artwork[currentIndex]);
+    const [currentImage, setCurrentImage] = useState(images[currentIndex]);
 
     const setNextImage = () => {
         console.log(currentIndex);
         setCurrentIndex((currentIndex + 1) % artwork.length);
-        setCurrentImage(artwork[currentIndex]);
+        setCurrentImage(images[currentIndex]);
     };
 
     const setPrevImage = () => {
         console.log(currentIndex);
         setCurrentIndex((currentIndex - 1 + artwork.length) % artwork.length);
-        setCurrentImage(artwork[currentIndex]);
+        setCurrentImage(images[currentIndex]);
     };
 
     return (
@@ -37,17 +39,15 @@ const Carousel = ({
                     className="cursor-pointer"
                 />
             </div>
-            <div className="absolute top-[50%] left-0 w-full p-24 flex justify-between -translate-y-[50%] z-[61]">
-                <div className="border border-white/50 backdrop-blur-lg rounded-full h-[50px] w-[50px] flex items-center justify-center cursor-pointer hover:bg-gray-900/50 transition ease-in-out duration-500">
-                    <button onClick={() => setPrevImage()}>
-                        <ArrowBackIcon />
-                    </button>
-                </div>
-                <div className="border border-white/50 backdrop-blur-lg rounded-full h-[50px] w-[50px] flex items-center justify-center cursor-pointer hover:bg-gray-900/50 transition ease-in-out duration-500">
-                    <button onClick={() => setNextImage()}>
-                        <ArrowForwardIcon />
-                    </button>
-                </div>
+            <div className="absolute top-[50%] left-[5%] -translate-y-[50%] z-[61] border border-white/50 backdrop-blur-lg rounded-full h-[50px] w-[50px] flex items-center justify-center cursor-pointer hover:bg-gray-900/50 transition ease-in-out duration-500">
+                <button onClick={() => setPrevImage()}>
+                    <ArrowBackIcon />
+                </button>
+            </div>
+            <div className="absolute top-[50%] right-[5%] -translate-y-[50%] z-[61] border border-white/50 backdrop-blur-lg rounded-full h-[50px] w-[50px] flex items-center justify-center cursor-pointer hover:bg-gray-900/50 transition ease-in-out duration-500">
+                <button onClick={() => setNextImage()}>
+                    <ArrowForwardIcon />
+                </button>
             </div>
             <div className="max-w-[80%] h-full relative py-12">
                 <Image
@@ -55,6 +55,7 @@ const Carousel = ({
                     alt={currentImage.title}
                     width={0}
                     height={0}
+                    quality={50}
                     sizes="100vw"
                     style={{ width: "100%", height: "100%" }}
                 />
