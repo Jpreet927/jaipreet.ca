@@ -1,19 +1,55 @@
+"use client";
+
 import React from "react";
 import { playfair } from "@/util/fonts";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { motion } from "framer-motion";
+import {
+    textOpacityLine,
+    textOpacityChar,
+    opacityTranslateY,
+} from "@/util/framerVariants";
 
 const Hero = () => {
     return (
-        <div className="bg-hero-image bg-cover bg-center h-screen w-screen flex flex-col justify-center xl:px-64 lg:px-32 md:px-16 px-8 overflow-y-hidden">
+        <motion.div
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            className="bg-hero-image bg-cover bg-center h-screen w-screen flex flex-col justify-center xl:px-64 lg:px-32 md:px-16 px-8 overflow-y-hidden"
+        >
             <div className="flex flex-col gap-4 sm:text-left text-center">
-                <h1 className={`${playfair.className} text-7xl font-bold`}>
-                    Hey, I'm Jaipreet
-                </h1>
-                <p className="opacity-75">
+                <motion.h1
+                    variants={textOpacityLine}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ delay: 1 }}
+                    className={`${playfair.className} text-7xl font-bold`}
+                >
+                    {"Hey, I'm Jaipreet".split("").map((char) => {
+                        return (
+                            <motion.span variants={textOpacityChar}>
+                                {char}
+                            </motion.span>
+                        );
+                    })}
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1.5, duration: 1 }}
+                    className="opacity-75"
+                >
                     I’m a software developer & a graphic designer.
-                </p>
+                </motion.p>
             </div>
-            <div className="flex justify-between items-end absolute left-0 bottom-0 w-full xl:px-64 lg:px-32 md:px-16 px-8 py-24">
+            <motion.div
+                variants={opacityTranslateY}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 2, duration: 1 }}
+                className="flex justify-between items-end absolute left-0 bottom-0 w-full xl:px-64 lg:px-32 md:px-16 px-8 py-24"
+            >
                 <p>
                     Based in <br />{" "}
                     <span className="font-bold">Toronto, ON</span>
@@ -60,8 +96,8 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 

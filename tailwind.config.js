@@ -21,7 +21,7 @@ module.exports = {
             backgroundImage: {
                 "hero-image": "url('../assets/images/Jaipreet-Hero-Image.jpg')",
                 "banner-image":
-                    "url('../assets/images/branding/Personal-Website-Gradient.jpg')",
+                    "url('../assets/branding/Personal-Website-Gradient.jpg')",
             },
             keyframes: {
                 gradientPulse: {

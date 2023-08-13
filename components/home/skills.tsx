@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
 import { playfair } from "@/util/fonts";
 import IconBox from "./iconbox";
 import { skillsIcons } from "@/data/skills-icons";
+import { motion } from "framer-motion";
+import { opacityTranslateY } from "@/util/framerVariants";
 
 const Skills = () => {
     // chunk sizes for 4-col icon grid
@@ -17,7 +21,13 @@ const Skills = () => {
             </h1>
             <div className="flex xl:flex-row flex-col items-center gap-16">
                 {/* SKILLS */}
-                <div className="2xl:w-[60%] xl:w-[50%] w-full flex flex-col gap-12">
+                <motion.div
+                    variants={opacityTranslateY}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    className="2xl:w-[60%] xl:w-[50%] w-full flex flex-col gap-12"
+                >
                     <div className="flex flex-col gap-2">
                         <h3 className="text-2xl font-bold">
                             Frontend Development
@@ -112,9 +122,15 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 {/* ICONS */}
-                <div className="2xl:w-[40%] xl:w-[50%] md:w-[66%] w-[90%] flex gap-4 items-center">
+                <motion.div
+                    variants={opacityTranslateY}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    className="2xl:w-[40%] xl:w-[50%] md:w-[66%] w-[90%] flex gap-4 items-center"
+                >
                     <div className="w-[25%] flex flex-col gap-4 translate-y-15">
                         {skillsIcons.slice(0, floor).map((icon) => (
                             <IconBox iconPath={icon.src} iconAlt={icon.alt} />
@@ -150,7 +166,7 @@ const Skills = () => {
                                 />
                             ))}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

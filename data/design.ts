@@ -6,7 +6,6 @@ import ingigolaend from "@/assets/images/Design Images/Indigo-La-End-1.jpg";
 import tlou from "@/assets/images/Design Images/Last-of-Us-2-Poster-2-updated.jpg";
 import klow from "@/assets/images/Design Images/Kyle-Lowry-Poster.jpg";
 import strangerthings from "@/assets/images/Design Images/Stranger-Things-3-Poster.jpg";
-
 import entropy from "@/assets/images/Design Images/project thumbnails/Entropy-Rebrand.jpg";
 import huntsmen from "@/assets/images/Design Images/project thumbnails/Huntsmen-Proposal.jpg";
 import north from "@/assets/images/Design Images/project thumbnails/North-Rebrand.jpg";

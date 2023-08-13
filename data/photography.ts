@@ -1,7 +1,6 @@
 import { Artwork } from "./design";
 
-// import img1 from "@/assets/images/Photography Images/jaipreet-singh-wHXDRkxKo7o-unsplash.jpg";
-import img1 from "@/assets/images/Photography Images/Optimized/jaipreet-singh-wHXDRkxKo7o-unsplash.webp";
+import img1 from "@/assets/images/Photography Images/jaipreet-singh-wHXDRkxKo7o-unsplash.jpg";
 import img2 from "@/assets/images/Photography Images/jaipreet-singh-S0Y9YqkGR-Q-unsplash.jpg";
 import img3 from "@/assets/images/Photography Images/IMG_8625.jpg";
 import img4 from "@/assets/images/Photography Images/jaipreet-singh-mcSNh20f2qs-unsplash.jpg";

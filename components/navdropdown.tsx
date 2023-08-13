@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import { navDropdown } from "@/util/framerVariants";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import ViewQuiltOutlinedIcon from "@mui/icons-material/ViewQuiltOutlined";
 import CameraEnhanceOutlinedIcon from "@mui/icons-material/CameraEnhanceOutlined";
@@ -15,7 +17,14 @@ const NavDropDown = ({ dropdownVisible, setDropDownVisible }: props) => {
     const path: String = usePathname();
 
     return (
-        <div className="absolute top-16 right-0 bg-black bg-opacity-50 backdrop-blur-xl p-4 w-[250px] rounded-lg transition-all">
+        <motion.div
+            variants={navDropdown}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.5 }}
+            className="absolute top-16 right-0 bg-black bg-opacity-50 backdrop-blur-xl p-4 w-[250px] rounded-lg transition-all"
+        >
             <ul
                 className="flex flex-col"
                 onClick={() => setDropDownVisible(false)}
@@ -60,7 +69,7 @@ const NavDropDown = ({ dropdownVisible, setDropDownVisible }: props) => {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </motion.div>
     );
 };
 

@@ -1,11 +1,10 @@
-{
-    /* <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]"></div> */
-}
+"use client";
 
 import React from "react";
 import { playfair } from "@/util/fonts";
 import BusinessCard from "./businesscard";
 import GridLine from "../gridline";
+import { motion } from "framer-motion";
 
 const Contact = () => {
     return (
@@ -24,13 +23,19 @@ const Contact = () => {
                     <BusinessCard />
                 </div>
             </div>
-            <div className="absolute top-0 left-0 w-full h-full flex justify-between xl:px-64 lg:px-32 md:px-8">
+            <motion.div
+                initial={{ y: 500, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2 }}
+                className="absolute top-0 left-0 w-full h-full flex justify-between xl:px-64 lg:px-32 md:px-8"
+            >
                 <GridLine />
                 <GridLine />
                 <GridLine />
                 <GridLine />
                 <GridLine />
-            </div>
+            </motion.div>
             <div className="absolute top-0 left-0 w-full h-full">
                 <div className="absolute bottom-0 right-0 w-[1750px] h-[1750px] translate-x-[50%] translate-y-[50%] bg-gradient-1 blur-[10rem] rounded-full animate-gradient-pulse-1"></div>
                 <div className="absolute bottom-0 right-[25%] w-[500px] h-[500px] translate-y-[50%] bg-gradient-2 blur-[10rem] rounded-full"></div>

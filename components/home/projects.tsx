@@ -1,15 +1,24 @@
+"use client";
+
 import { playfair } from "@/util/fonts";
 import React from "react";
 import ProjectCard from "./projectcard";
 import GridLine from "../gridline";
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import { motion } from "framer-motion";
 
 const Projects = () => {
     return (
         <div className="relative flex flex-col items-center gap-12 xl:px-64 lg:px-32 md:px-16 px-8 py-24">
             <div className="w-full h-[25%] absolute bottom-0 left-0 bg-gradient-to-t from-background to-black-0 z-10"></div>
-            <div className="absolute top-0 left-0 w-full h-full xl:px-64 lg:px-32 md:px-16 px-8 flex gap-4">
+            <motion.div
+                initial={{ scaleY: 0, opacity: 0 }}
+                whileInView={{ scaleY: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2 }}
+                className="absolute top-0 left-0 w-full h-full xl:px-64 lg:px-32 md:px-16 px-8 flex gap-4"
+            >
                 <div className="flex w-full justify-between">
                     <GridLine />
                     <GridLine />
@@ -18,7 +27,7 @@ const Projects = () => {
                     <GridLine />
                     <GridLine />
                 </div>
-            </div>
+            </motion.div>
             <div className="w-[50%] flex flex-col items-center gap-12">
                 <h1
                     className={`${playfair.className} text-7xl font-bold self-center`}

@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { playfair } from "@/util/fonts";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Hero from "@/components/home/hero";
 import Projects from "@/components/home/projects";
 import Skills from "@/components/home/skills";
