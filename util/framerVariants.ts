@@ -17,10 +17,10 @@ export const textOpacityChar = {
 
 export const opacityTranslateY = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-        opacity: 1,
+    visible: (opacityVal: number = 1) => ({
+        opacity: opacityVal,
         y: 0,
-    },
+    }),
 };
 
 export const navDropdown = {

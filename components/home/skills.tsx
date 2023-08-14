@@ -7,6 +7,19 @@ import { skillsIcons } from "@/data/skills-icons";
 import { motion } from "framer-motion";
 import { opacityTranslateY } from "@/util/framerVariants";
 
+const iconColVariant = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: { delayChildren: 0.5, staggerChildren: 1 },
+    },
+};
+
+const iconVariant = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 1 } },
+};
+
 const Skills = () => {
     // chunk sizes for 4-col icon grid
     const floor: number = Math.floor(skillsIcons.length / 4);
@@ -26,6 +39,7 @@ const Skills = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
+                    transition={{ duration: 1 }}
                     className="2xl:w-[60%] xl:w-[50%] w-full flex flex-col gap-12"
                 >
                     <div className="flex flex-col gap-2">
@@ -124,49 +138,98 @@ const Skills = () => {
                     </div>
                 </motion.div>
                 {/* ICONS */}
-                <motion.div
-                    variants={opacityTranslateY}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    className="2xl:w-[40%] xl:w-[50%] md:w-[66%] w-[90%] flex gap-4 items-center"
-                >
-                    <div className="w-[25%] flex flex-col gap-4 translate-y-15">
+                <div className="2xl:w-[40%] xl:w-[50%] md:w-[66%] w-[90%] flex gap-4 items-center">
+                    <motion.div
+                        variants={iconColVariant}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        className="w-[25%] flex flex-col gap-4 translate-y-15"
+                    >
                         {skillsIcons.slice(0, floor).map((icon) => (
-                            <IconBox iconPath={icon.src} iconAlt={icon.alt} />
+                            <motion.div
+                                variants={iconVariant}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true }}
+                            >
+                                <IconBox
+                                    iconPath={icon.src}
+                                    iconAlt={icon.alt}
+                                />
+                            </motion.div>
                         ))}
-                    </div>
-                    <div className="w-[25%] flex flex-col gap-4 translate-y-5">
+                    </motion.div>
+                    <motion.div
+                        variants={iconColVariant}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        className="w-[25%] flex flex-col gap-4 translate-y-5"
+                    >
                         {skillsIcons
                             .slice(floor, floor + ceiling)
                             .map((icon) => (
-                                <IconBox
-                                    iconPath={icon.src}
-                                    iconAlt={icon.alt}
-                                />
+                                <motion.div
+                                    variants={iconVariant}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true }}
+                                >
+                                    <IconBox
+                                        iconPath={icon.src}
+                                        iconAlt={icon.alt}
+                                    />
+                                </motion.div>
                             ))}
-                    </div>
-                    <div className="w-[25%] flex flex-col gap-4 -translate-y-5">
+                    </motion.div>
+                    <motion.div
+                        variants={iconColVariant}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        className="w-[25%] flex flex-col gap-4 -translate-y-5"
+                    >
                         {skillsIcons
                             .slice(floor + ceiling, floor + 2 * ceiling)
                             .map((icon) => (
-                                <IconBox
-                                    iconPath={icon.src}
-                                    iconAlt={icon.alt}
-                                />
+                                <motion.div
+                                    variants={iconVariant}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true }}
+                                >
+                                    <IconBox
+                                        iconPath={icon.src}
+                                        iconAlt={icon.alt}
+                                    />
+                                </motion.div>
                             ))}
-                    </div>
-                    <div className="w-[25%] flex flex-col gap-4 -translate-y-15">
+                    </motion.div>
+                    <motion.div
+                        variants={iconColVariant}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        className="w-[25%] flex flex-col gap-4 -translate-y-15"
+                    >
                         {skillsIcons
                             .slice(floor + 2 * ceiling, skillsIcons.length)
                             .map((icon) => (
-                                <IconBox
-                                    iconPath={icon.src}
-                                    iconAlt={icon.alt}
-                                />
+                                <motion.div
+                                    variants={iconVariant}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true }}
+                                >
+                                    <IconBox
+                                        iconPath={icon.src}
+                                        iconAlt={icon.alt}
+                                    />
+                                </motion.div>
                             ))}
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
             </div>
         </section>
     );
