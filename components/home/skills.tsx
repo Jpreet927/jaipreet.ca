@@ -11,13 +11,16 @@ const iconColVariant = {
     hidden: { opacity: 0 },
     show: {
         opacity: 1,
-        transition: { delayChildren: 0.5, staggerChildren: 1 },
     },
 };
 
 const iconVariant = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 1 } },
+    show: (index = 0) => ({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1, delay: 0.2 * index },
+    }),
 };
 
 const Skills = () => {
@@ -144,14 +147,16 @@ const Skills = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
+                        transition={{ delay: 0 }}
                         className="w-[25%] flex flex-col gap-4 translate-y-15"
                     >
-                        {skillsIcons.slice(0, floor).map((icon) => (
+                        {skillsIcons.slice(0, floor).map((icon, index) => (
                             <motion.div
                                 variants={iconVariant}
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true }}
+                                custom={index}
                             >
                                 <IconBox
                                     iconPath={icon.src}
@@ -165,16 +170,18 @@ const Skills = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
+                        transition={{ delay: 0.25 }}
                         className="w-[25%] flex flex-col gap-4 translate-y-5"
                     >
                         {skillsIcons
                             .slice(floor, floor + ceiling)
-                            .map((icon) => (
+                            .map((icon, index) => (
                                 <motion.div
                                     variants={iconVariant}
                                     initial="hidden"
                                     whileInView="show"
                                     viewport={{ once: true }}
+                                    custom={index}
                                 >
                                     <IconBox
                                         iconPath={icon.src}
@@ -188,16 +195,18 @@ const Skills = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
+                        transition={{ delay: 0.5 }}
                         className="w-[25%] flex flex-col gap-4 -translate-y-5"
                     >
                         {skillsIcons
                             .slice(floor + ceiling, floor + 2 * ceiling)
-                            .map((icon) => (
+                            .map((icon, index) => (
                                 <motion.div
                                     variants={iconVariant}
                                     initial="hidden"
                                     whileInView="show"
                                     viewport={{ once: true }}
+                                    custom={index}
                                 >
                                     <IconBox
                                         iconPath={icon.src}
@@ -211,16 +220,18 @@ const Skills = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
+                        transition={{ delay: 0.75 }}
                         className="w-[25%] flex flex-col gap-4 -translate-y-15"
                     >
                         {skillsIcons
                             .slice(floor + 2 * ceiling, skillsIcons.length)
-                            .map((icon) => (
+                            .map((icon, index) => (
                                 <motion.div
                                     variants={iconVariant}
                                     initial="hidden"
                                     whileInView="show"
                                     viewport={{ once: true }}
+                                    custom={index}
                                 >
                                     <IconBox
                                         iconPath={icon.src}
