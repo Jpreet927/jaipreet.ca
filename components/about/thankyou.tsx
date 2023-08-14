@@ -7,8 +7,10 @@ import GridLine from "@/components/gridline";
 const ThankYou = () => {
     return (
         <section className="relative overflow-hidden w-screen h-screen bg-black flex justify-center items-center">
-            <div className="z-10 w-[40%] flex flex-col justify-center items-center gap-12">
-                <h1 className={`${playfair.className} text-9xl font-bold`}>
+            <div className="z-10 xl:w-[40%] w-[66%] flex flex-col justify-center items-center gap-12">
+                <h1
+                    className={`${playfair.className} lg:text-9xl md:text-8xl sm:text-7xl text-6xl font-bold`}
+                >
                     Thank you.
                 </h1>
                 <p className="text-center">

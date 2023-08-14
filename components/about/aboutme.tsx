@@ -8,10 +8,12 @@ import HTMLTag from "@/components/about/htmltag";
 
 const AboutMe = () => {
     return (
-        <section className="flex flex-col px-80 py-24 gap-24">
-            <div className="flex gap-12">
-                <div className="w-[50%] flex flex-col gap-16 [&>p]:opacity-75">
-                    <h1 className={`${playfair.className} text-7xl font-bold`}>
+        <section className="flex flex-col xl:px-64 lg:px-32 md:px-16 px-8 py-24 gap-24">
+            <div className="flex lg:flex-row flex-col gap-12">
+                <div className="lg:w-[50%] lg:px-0 px-12 w-full flex flex-col gap-16 [&>p]:opacity-75">
+                    <h1
+                        className={`${playfair.className} md:text-7xl text-5xl font-bold`}
+                    >
                         "Who Am I?"
                     </h1>
                     <p className="leading-7">
@@ -35,7 +37,7 @@ const AboutMe = () => {
                         (Gintama atm) 😊
                     </p>
                 </div>
-                <div className="w-[50%] px-24 flex flex-col gap-4">
+                <div className="lg:w-[50%] w-full 2xl:px-24 xl:px-12 lg:px-6 md:px-36 px-12 flex flex-col gap-4">
                     <Image src={me} alt="Portrait of Jaipreet" />
                     <p className="opacity-75 font-light text-xs">
                         A photo from my most recent trip to Japan! Taken by
@@ -44,8 +46,8 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className="bg-white/25 h-[1px] w-full"></div>
-            <div className="flex justify-between gap-12 w-full">
-                <div className="flex flex-col gap-4 w-[33%]">
+            <div className="flex xl:flex-row flex-col justify-between gap-12 w-full">
+                <div className="flex flex-col gap-4 xl:w-[33%] w-full">
                     <Sinewave />
                     <h3 className="text-xl font-bold">
                         My Academic Background
@@ -59,7 +61,7 @@ const AboutMe = () => {
                         with teams of engineers to achieve a common goal.
                     </p>
                 </div>
-                <div className="flex flex-col gap-4 w-[33%]">
+                <div className="flex flex-col gap-4 xl:w-[33%] w-full">
                     <TransformBox />
                     <h3 className="text-xl font-bold">A Creative At Heart</h3>
                     <p className="opacity-75 leading-7">
@@ -72,7 +74,7 @@ const AboutMe = () => {
                         view some of my work on my Behance profile!
                     </p>
                 </div>
-                <div className="flex flex-col gap-4 w-[33%]">
+                <div className="flex flex-col gap-4 xl:w-[33%] w-full">
                     <HTMLTag />
                     <h3 className="text-xl font-bold">
                         My Journey as a Developer
