@@ -1,12 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { playfair } from "@/util/fonts";
 import BusinessCard from "./businesscard";
 import GridLine from "../gridline";
 import { motion } from "framer-motion";
 
 const Contact = () => {
+    // const ref = useRef();
+
     return (
         <section className="h-screen w-full relative grid items-center overflow-hidden">
             <div className="w-full xl:px-64 lg:px-32 md:px-16 px-8 flex z-10 items-center lg:flex-row flex-col lg:gap-0 gap-12">
