@@ -5,6 +5,7 @@ import Banner from "@/components/portfolio/banner";
 import Carousel from "@/components/portfolio/carousel";
 import { photos } from "@/data/photography";
 import GalleryImage from "@/components/portfolio/galleryImage";
+import banner from "@/assets/images/Photography Images/photography-banner.jpg";
 
 const PhotographyPage = () => {
     const [carouselVisible, setCarouselVisible] = useState(false);
@@ -21,12 +22,15 @@ const PhotographyPage = () => {
                     />
                 </div>
             )}
-            <Banner images={photos} title={"Photography"} />
+            <Banner
+                banner={{ src: banner, alt: "Photography Page banner image" }}
+                title={"Photography"}
+            />
             <div className="xl:px-64 lg:px-32 md:px-16 px-8 mb-24 flex flex-col gap-16">
                 <div className="flex flex-col gap-6">
                     <div className="flex gap-6 items-center">
                         <h3 className="text-2xl font-bold whitespace-nowrap">
-                            Art Gallery
+                            Image Gallery
                         </h3>
                         <div className="bg-white/50 h-[1px] w-[90%]"></div>
                     </div>
