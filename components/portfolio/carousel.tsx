@@ -73,16 +73,16 @@ const Carousel = ({
                     initial="enter"
                     animate="center"
                     exit="exit"
-                    className="max-w-[80%] h-full relative py-12"
+                    className="w-[80%] h-[90%] relative grid items-center"
                 >
                     <Image
                         src={currentImage.src}
                         alt={currentImage.title}
-                        width={0}
-                        height={0}
                         quality={50}
-                        sizes="100vw"
-                        style={{ width: "100%", height: "100%" }}
+                        fill
+                        className="object-contain"
+                        placeholder="blur"
+                        loading="eager"
                     />
                 </motion.div>
             </div>
