@@ -12,7 +12,7 @@ const Banner = ({
 }) => {
     return (
         <div className="relative h-[50vh] flex items-center w-screen bg-background overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-30">
+            <div className="absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-30">
                 <h1
                     className={`${playfair.className} md:text-6xl text-5xl font-bold`}
                 >
@@ -27,6 +27,7 @@ const Banner = ({
                     draggable={false}
                     className="h-full"
                     style={{ objectFit: "cover" }}
+                    placeholder="blur"
                 />
             </div>
             <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-black to-black/0 opacity-75 z-20"></div>

@@ -11,8 +11,8 @@ export const textOpacityLine = {
 };
 
 export const textOpacityChar = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 50, filter: "blur(5px)" },
+    visible: { opacity: 1, y: 0, filter: "blur(0px)" },
 };
 
 export const opacityTranslateY = {

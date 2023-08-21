@@ -22,6 +22,7 @@ const GalleryImage = ({ img }: { img: Artwork }) => {
                 alt={img.title}
                 style={{ marginBottom: "16px" }}
                 quality={10}
+                placeholder="blur"
             />
         </motion.div>
     );

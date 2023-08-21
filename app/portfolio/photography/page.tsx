@@ -23,7 +23,10 @@ const PhotographyPage = () => {
                 </div>
             )}
             <Banner
-                banner={{ src: banner, alt: "Photography Page banner image" }}
+                banner={{
+                    src: banner,
+                    alt: "Photography Page banner image",
+                }}
                 title={"Photography"}
             />
             <div className="xl:px-64 lg:px-32 md:px-16 px-8 mb-24 flex flex-col gap-16">
