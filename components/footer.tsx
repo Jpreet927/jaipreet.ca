@@ -30,37 +30,43 @@ const Footer = () => {
                     </p>
                     <a
                         className="opacity-75 hover:opacity-100 transition ease-in delay-400"
-                        href=""
+                        href="https://twitter.com/Jpreet_"
+                        target="_blank"
                     >
                         Twitter
                     </a>
                     <a
                         className="opacity-75 hover:opacity-100 transition ease-in delay-400"
-                        href=""
+                        href="https://www.instagram.com/jpreetcreate/"
+                        target="_blank"
                     >
                         Instagram
                     </a>
                     <a
                         className="opacity-75 hover:opacity-100 transition ease-in delay-400"
-                        href=""
+                        href="https://www.linkedin.com/in/jaipreetsingh/"
+                        target="_blank"
                     >
                         LinkedIn
                     </a>
                     <a
                         className="opacity-75 hover:opacity-100 transition ease-in delay-400"
-                        href=""
+                        href="https://www.behance.net/jaipreet"
+                        target="_blank"
                     >
                         Behance
                     </a>
                     <a
                         className="opacity-75 hover:opacity-100 transition ease-in delay-400"
-                        href=""
+                        href="https://github.com/Jpreet927"
+                        target="_blank"
                     >
                         Github
                     </a>
                     <a
                         className="opacity-75 hover:opacity-100 transition ease-in delay-400"
-                        href=""
+                        href="https://unsplash.com/@jpreet"
+                        target="_blank"
                     >
                         Unsplash
                     </a>
