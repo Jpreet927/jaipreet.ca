@@ -50,13 +50,13 @@ const Skills = () => {
                             Frontend Development
                         </h3>
                         <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
-                            <div className="sm:w-[75%] w-full max-w-full">
+                            <div className="sm:w-[75%] w-full">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nam hendrerit nisi sed
-                                    sollicitudin pellentesque. Nunc posuere
-                                    purus rhoncus pulvinar aliquam. Ut aliquet
-                                    tristique nisl vitae volutpat.
+                                    The frontend is my forté. Drawing from my
+                                    background in design, I'm able to whip up
+                                    detailed wireframes with ease, then break
+                                    them down into web page components to
+                                    compose a pixel perfect user experience.
                                 </p>
                             </div>
                             <div className="sm:w-[25%] sm:flex-col flex flex-row flex-wrap sm:gap-1 gap-4 justify-between w-full">
@@ -70,7 +70,7 @@ const Skills = () => {
                                     Angular
                                 </p>
                                 <p className="hover:text-white transition ease-in-out duration-300">
-                                    JavaScript/TypeScript
+                                    JavaScript
                                 </p>
                                 <p className="hover:text-white transition ease-in-out duration-300">
                                     HTML/CSS
@@ -85,11 +85,12 @@ const Skills = () => {
                         <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
                             <div className="sm:w-[75%] w-full">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nam hendrerit nisi sed
-                                    sollicitudin pellentesque. Nunc posuere
-                                    purus rhoncus pulvinar aliquam. Ut aliquet
-                                    tristique nisl vitae volutpat.
+                                    My experience encompasses architecting
+                                    RESTful APIs, integrating SQL and NoSQL
+                                    databases, and implementing user
+                                    authentication and authorization systems to
+                                    guarantee security and power the backbone of
+                                    an application.
                                 </p>
                             </div>
                             <div className="sm:w-[25%] sm:flex-col flex flex-row flex-wrap sm:gap-1 gap-4 justify-between w-full">
@@ -116,11 +117,12 @@ const Skills = () => {
                         <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
                             <div className="sm:w-[75%] w-full">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nam hendrerit nisi sed
-                                    sollicitudin pellentesque. Nunc posuere
-                                    purus rhoncus pulvinar aliquam. Ut aliquet
-                                    tristique nisl vitae volutpat.
+                                    I have almost 7 years of graphic design
+                                    experience, encompassing art direction,
+                                    branding, photomanipulation, illustration,
+                                    and motion design. With the dexterity I've
+                                    acquired in my design tools, I can bring any
+                                    idea to fruition.
                                 </p>
                             </div>
                             <div className="sm:w-[25%] sm:flex-col flex flex-row flex-wrap sm:gap-1 gap-4 justify-between w-full">

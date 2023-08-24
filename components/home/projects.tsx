@@ -35,9 +35,9 @@ const Projects = () => {
                     Projects
                 </h1>
                 <p className="opacity-75 text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Below you can find some of my most notable personal and
+                    academic projects. Source code for software projects can be
+                    found on my Github!
                 </p>
             </div>
             <div className="z-20 flex flex-col gap-12 items-center">
