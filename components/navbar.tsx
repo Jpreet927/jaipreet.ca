@@ -67,13 +67,21 @@ const Navbar = () => {
                     >
                         <Link
                             href="/"
-                            className={path === "/" ? "font-bold" : ""}
+                            className={
+                                path === "/"
+                                    ? "opacity-100"
+                                    : "opacity-70 hover:opacity-100 transition-opacity duration-500"
+                            }
                         >
                             Home
                         </Link>
                     </li>
                     <li
-                        className="relative sm:flex hidden items-center gap-2 group sm:h-full"
+                        className={`relative sm:flex hidden items-center gap-2 group sm:h-full ${
+                            path.includes("portfolio")
+                                ? "opacity-100"
+                                : "opacity-70 hover:opacity-100 transition-opacity duration-500"
+                        }`}
                         onMouseEnter={() => setDropDownVisible(true)}
                         onMouseLeave={() => setDropDownVisible(false)}
                         onClick={() => setMobileViewVisible(false)}
@@ -126,7 +134,11 @@ const Navbar = () => {
                     >
                         <Link
                             href="/about"
-                            className={path === "/about" ? "font-bold" : ""}
+                            className={
+                                path === "/about"
+                                    ? "opacity-100"
+                                    : "opacity-70 hover:opacity-100 transition-opacity duration-500"
+                            }
                         >
                             About
                         </Link>
