@@ -42,9 +42,9 @@ const Projects = () => {
             </div>
             <div className="z-20 flex flex-col gap-12 items-center">
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-                    {projects.map((project) => {
+                    {projects.map((project, index) => {
                         return (
-                            <div className="">
+                            <div key={index}>
                                 <ProjectCard project={project} />
                             </div>
                         );

@@ -27,9 +27,12 @@ const Hero = () => {
                         transition={{ delay: 1 }}
                         className={`${playfair.className} text-7xl font-bold`}
                     >
-                        {"Hey, I'm Jaipreet".split("").map((char) => {
+                        {"Hey, I'm Jaipreet".split("").map((char, index) => {
                             return (
-                                <motion.span variants={textOpacityChar}>
+                                <motion.span
+                                    key={index}
+                                    variants={textOpacityChar}
+                                >
                                     {char}
                                 </motion.span>
                             );

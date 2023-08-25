@@ -154,6 +154,7 @@ const Skills = () => {
                     >
                         {skillsIcons.slice(0, floor).map((icon, index) => (
                             <motion.div
+                                key={index}
                                 variants={iconVariant}
                                 initial="hidden"
                                 whileInView="show"
@@ -179,6 +180,7 @@ const Skills = () => {
                             .slice(floor, floor + ceiling)
                             .map((icon, index) => (
                                 <motion.div
+                                    key={index}
                                     variants={iconVariant}
                                     initial="hidden"
                                     whileInView="show"
@@ -204,6 +206,7 @@ const Skills = () => {
                             .slice(floor + ceiling, floor + 2 * ceiling)
                             .map((icon, index) => (
                                 <motion.div
+                                    key={index}
                                     variants={iconVariant}
                                     initial="hidden"
                                     whileInView="show"
@@ -229,6 +232,7 @@ const Skills = () => {
                             .slice(floor + 2 * ceiling, skillsIcons.length)
                             .map((icon, index) => (
                                 <motion.div
+                                    key={index}
                                     variants={iconVariant}
                                     initial="hidden"
                                     whileInView="show"

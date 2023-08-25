@@ -40,6 +40,7 @@ const PhotographyPage = () => {
                     <div className="gap-[16px] lg:columns-3 md:columns-2 columns-1">
                         {photos.map((img, index) => (
                             <div
+                                key={index}
                                 onClick={() => {
                                     setCarouselVisible(true);
                                     setCurrentIndex(index);

@@ -19,8 +19,8 @@ const DevelopmentPage = () => {
                         <div className="bg-white/50 h-[1px] w-[90%]"></div>
                     </div>
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
-                        {projects.map((img) => (
-                            <ProjectCard project={img} />
+                        {projects.map((img, index) => (
+                            <ProjectCard key={index} project={img} />
                         ))}
                     </div>
                 </div>
