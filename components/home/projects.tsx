@@ -28,13 +28,13 @@ const Projects = () => {
                     <GridLine />
                 </div>
             </motion.div>
-            <div className="w-[50%] flex flex-col items-center gap-12">
+            <div className="md:w-[50%] w-[80%] flex flex-col items-center gap-12">
                 <h1
-                    className={`${playfair.className} text-7xl font-bold self-center`}
+                    className={`${playfair.className} sm:text-7xl text-5xl font-bold self-center`}
                 >
                     Projects
                 </h1>
-                <p className="opacity-75 text-center">
+                <p className="opacity-75 text-center sm:text-base text-sm">
                     Below you can find some of my most notable personal and
                     academic projects. Source code for software projects can be
                     found on my Github!

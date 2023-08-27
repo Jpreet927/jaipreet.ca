@@ -41,18 +41,18 @@ const Hero = () => {
                     </motion.p>
                     <motion.h1
                         variants={itemVariant}
-                        className={`${playfair.className} md:text-7xl text-5xl font-bold`}
+                        className={`${playfair.className} md:text-7xl text-6xl font-bold`}
                     >
                         About Me,
                     </motion.h1>
                     <motion.h1
                         variants={itemVariant}
-                        className={`${playfair.className} md:text-7xl text-5xl font-bold`}
+                        className={`${playfair.className} md:text-7xl text-6xl font-bold`}
                     >
                         Jaipreet Singh
                     </motion.h1>
                 </motion.div>
-                <div className="lg:w-[50%] md:w-[75%] w-full xl:h-full h-[25%] flex justify-center items-center">
+                <div className="lg:w-[50%] md:w-[75%] w-full xl:h-full h-[25%] md:flex hidden justify-center items-center">
                     <div className="h-[250px] w-[100%] relative flex-grow">
                         <Image
                             src={ticket}

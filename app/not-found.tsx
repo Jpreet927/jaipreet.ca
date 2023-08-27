@@ -5,15 +5,11 @@ import { inter } from "../util/fonts";
 const NotFound = () => {
     return (
         <div className="w-screen h-screen flex justify-center items-center relative overflow-hidden">
-            <div className="flex items-center justify-center gap-12 z-10 w-[33%]">
-                <h1
-                    className={`${inter.className} md:text-8xl text-5xl font-bold`}
-                >
-                    404
-                </h1>
-                <div className="h-[125px] w-[1px] bg-white/50"></div>
-                <div className="flex flex-col gap-4">
-                    <p>
+            <div className="flex sm:flex-row flex-col items-center justify-center sm:gap-12 gap-4 z-10 xl:w-[33%] lg:w-[50%] md:w-[66%] w-[75%]">
+                <h1 className={`${inter.className} text-8xl font-bold`}>404</h1>
+                <div className="h-[125px] w-[1px] bg-white/50 sm:block hidden"></div>
+                <div className="flex flex-col gap-4 sm:items-start items-center">
+                    <p className="sm:text-left text-center">
                         Hey, you might be lost. The page you're looking for
                         doesn't exist.
                     </p>

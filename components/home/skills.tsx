@@ -31,7 +31,7 @@ const Skills = () => {
     return (
         <section className="w-full flex flex-col gap-12 2xl:px-64 xl:px-48 lg:px-32 md:px-16 px-8 pt-12 pb-36">
             <h1
-                className={`${playfair.className} text-7xl font-bold self-center`}
+                className={`${playfair.className} sm:text-7xl text-5xl font-bold self-center`}
             >
                 My Skills
             </h1>
@@ -46,12 +46,12 @@ const Skills = () => {
                     className="2xl:w-[60%] xl:w-[50%] w-full flex flex-col gap-12"
                 >
                     <div className="flex flex-col gap-2">
-                        <h3 className="text-2xl font-bold">
+                        <h3 className="sm:text-2xl text-xl font-bold">
                             Frontend Development
                         </h3>
                         <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
                             <div className="sm:w-[75%] w-full">
-                                <p>
+                                <p className="sm:text-base text-sm">
                                     The frontend is my forté. Drawing from my
                                     background in design, I'm able to whip up
                                     detailed wireframes with ease, then break
@@ -60,31 +60,31 @@ const Skills = () => {
                                 </p>
                             </div>
                             <div className="sm:w-[25%] sm:flex-col flex flex-row flex-wrap sm:gap-1 gap-4 justify-between w-full">
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     React.js
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     Next.js
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     Angular
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     JavaScript
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     HTML/CSS
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h3 className="text-2xl font-bold">
+                        <h3 className="sm:text-2xl text-xl font-bold">
                             Backend Development
                         </h3>
                         <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
                             <div className="sm:w-[75%] w-full">
-                                <p>
+                                <p className="sm:text-base text-sm">
                                     My experience encompasses architecting
                                     RESTful APIs, integrating SQL and NoSQL
                                     databases, and implementing user
@@ -94,29 +94,31 @@ const Skills = () => {
                                 </p>
                             </div>
                             <div className="sm:w-[25%] sm:flex-col flex flex-row flex-wrap sm:gap-1 gap-4 justify-between w-full">
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     Node/Express
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     Java Spring
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     Python
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     MongoDB
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     SQL
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h3 className="text-2xl font-bold">Design</h3>
+                        <h3 className="sm:text-2xl text-xl font-bold">
+                            Design
+                        </h3>
                         <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
                             <div className="sm:w-[75%] w-full">
-                                <p>
+                                <p className="sm:text-base text-sm">
                                     I have almost 7 years of graphic design
                                     experience, encompassing art direction,
                                     branding, photomanipulation, illustration,
@@ -126,16 +128,16 @@ const Skills = () => {
                                 </p>
                             </div>
                             <div className="sm:w-[25%] sm:flex-col flex flex-row flex-wrap sm:gap-1 gap-4 justify-between w-full">
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     Photoshop
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     After Effects
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     Lightroom
                                 </p>
-                                <p className="hover:text-white transition ease-in-out duration-300">
+                                <p className="sm:text-base text-sm hover:text-white transition ease-in-out duration-300">
                                     Figma
                                 </p>
                             </div>

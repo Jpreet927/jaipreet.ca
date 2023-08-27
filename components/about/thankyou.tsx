@@ -9,11 +9,11 @@ const ThankYou = () => {
         <section className="relative overflow-hidden w-screen h-screen bg-black flex justify-center items-center">
             <div className="z-10 xl:w-[40%] w-[66%] flex flex-col justify-center items-center gap-12">
                 <h1
-                    className={`${playfair.className} lg:text-9xl md:text-8xl sm:text-7xl text-6xl font-bold`}
+                    className={`${playfair.className} lg:text-9xl md:text-8xl sm:text-7xl text-5xl font-bold`}
                 >
                     Thank you.
                 </h1>
-                <p className="text-center">
+                <p className="text-center sm:text-base text-sm">
                     <span className="opacity-75">
                         I'm always open to new opportunities, feel free to
                         contact me at{" "}
@@ -80,9 +80,9 @@ const ThankYou = () => {
                 ))}
             </motion.div>
             <div className="absolute top-0 left-0 w-full h-full">
-                <div className="absolute bottom-10 left-0 w-[1000px] h-[1000px] translate-x-[-25%] translate-y-[0%] bg-gradient-1 blur-[10rem] rounded-full animate-gradient-pulse-1"></div>
-                <div className="absolute bottom-0 left-[25%] w-[500px] h-[500px] translate-y-[50%] bg-white opacity-25 blur-[10rem] rounded-full"></div>
-                <div className="absolute bottom-[0] left-[0] w-[500px] h-[500px] translate-x-[75%] translate-y-[50%] bg-gradient-3 blur-[10rem] rounded-full animate-gradient-pulse-2"></div>
+                <div className="absolute top-56 left-[18%] w-[1200px] h-[1200px] bg-gradient-1 blur-[10rem] rounded-full"></div>
+                <div className="absolute bottom-0 left-[25%] w-[500px] h-[500px] translate-y-[50%] bg-white opacity-50 blur-[10rem] rounded-full"></div>
+                <div className="absolute bottom-[0] left-[0] w-[500px] h-[500px] translate-x-[75%] translate-y-[50%] bg-gradient-1 blur-[10rem] rounded-full animate-gradient-pulse-2"></div>
             </div>
         </section>
     );
