@@ -11,10 +11,10 @@
     --text-primary: #ffffff;
     --text-blue: #409dea;
     --grid-cyan: #7fe3f9;
-    --gradient-1: #2982ff;
-    --gradient-2: #271cff;
-    --gradient-3: #1c6fff;
-    --gradient-4: #d4cec1;
+    --gradient-1: #0073ff;
+    --gradient-2: #0015ff;
+    --gradient-3: #83d8ff;
+    --gradient-4: #f389f3;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
