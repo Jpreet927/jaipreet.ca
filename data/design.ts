@@ -3,9 +3,13 @@ import bleach from "@/assets/images/Design Images/Bleach-Poster.jpg";
 import yakouchuu from "@/assets/images/Design Images/Indigo-La-End-Yakouchuu.jpg";
 import utopia from "@/assets/images/Design Images/Utopia.jpg";
 import ingigolaend from "@/assets/images/Design Images/Indigo-La-End-1.jpg";
-import tlou from "@/assets/images/Design Images/Last-of-Us-2-Poster-2-updated.jpg";
+import cg from "@/assets/images/Design Images/Code-Geass-Painting-Final.jpg";
+import tlou2 from "@/assets/images/Design Images/Last-of-Us-2-Poster-2-updated.jpg";
+import interframe from "@/assets/images/Design Images/Interframe - everything will be ok.jpg";
 import klow from "@/assets/images/Design Images/Kyle-Lowry-Poster.jpg";
+import donda from "@/assets/images/Design Images/DONDA Front.jpg";
 import strangerthings from "@/assets/images/Design Images/Stranger-Things-3-Poster.jpg";
+import tlou from "@/assets/images/Design Images/Last-of-Us-2-Poster-1.jpg";
 import entropy from "@/assets/images/Design Images/project thumbnails/Entropy-Rebrand.jpg";
 import huntsmen from "@/assets/images/Design Images/project thumbnails/Huntsmen-Proposal.jpg";
 import north from "@/assets/images/Design Images/project thumbnails/North-Rebrand.jpg";
@@ -64,8 +68,8 @@ export const artwork: Artwork[] = [
         src: bleach,
     },
     {
-        title: "Utopia Poster",
-        src: utopia,
+        title: "Stranger Things Poster",
+        src: strangerthings,
     },
     {
         title: "Yakouchuu Poster",
@@ -77,14 +81,30 @@ export const artwork: Artwork[] = [
     },
     {
         title: "Last of Us 2 Poster",
-        src: tlou,
+        src: tlou2,
     },
     {
         title: "Kyle Lowry Poster",
         src: klow,
     },
     {
-        title: "Stranger Things Poster",
-        src: strangerthings,
+        title: "Utopia Poster",
+        src: utopia,
+    },
+    {
+        title: "Code Geass Poster",
+        src: cg,
+    },
+    {
+        title: "Interframe - Everything Will Be Ok Album Art",
+        src: interframe,
+    },
+    {
+        title: "Kanye West - DONDA Album Art",
+        src: donda,
+    },
+    {
+        title: "The Last Of Us 2 Box Art Concept",
+        src: tlou,
     },
 ];

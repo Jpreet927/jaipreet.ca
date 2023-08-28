@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import jtweet from "@/assets/images/Project Thumbnails/Jtweet.jpeg";
 import harmoni from "@/assets/images/Project Thumbnails/Harmoni.jpg";
 import ecommerce from "@/assets/images/Project Thumbnails/Ecommerce.jpg";
@@ -17,7 +16,7 @@ export const projects: Project[] = [
     {
         title: "Harmoni",
         description:
-            "Harmoni is an AI Based Health Assitant developed in a team of 4 to assist users in tracking their health and fitness progress over time. There is a rising prevalence of cardiovascular diseases such as diabetes and stroke, and our team's commitment is to design a solution to provide an easy, simple product for individuals to take the next step in their journey towards improved health.",
+            "Harmoni is an AI Based Health Assitant developed in a team of 4 that uses machine learning and sensor data to aggregate a users risk of contracting cardiovascular disease.",
         category: "App Development",
         src: harmoni,
         link: "https://www.youtube.com/watch?v=b8yH6oT6mlI",

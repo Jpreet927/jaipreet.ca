@@ -2,6 +2,7 @@ import { Project } from "@/components/home/projectcard";
 
 import harmoni from "@/assets/images/Development Images/Harmoni.jpg";
 import jtweet from "@/assets/images/Development Images/Jtweet.jpeg";
+import blog from "@/assets/images/Development Images/BlogAPI.jpg";
 import entertainment from "@/assets/images/Development Images/Entertainment-Hub.jpg";
 import ecom from "@/assets/images/Development Images/Ecommerce.jpg";
 import weather from "@/assets/images/Development Images/Weather-App.jpg";
@@ -11,49 +12,57 @@ export const projects: Project[] = [
     {
         title: "Harmoni",
         description:
-            "Established new social media assets and brand guidelines to reflect core brand attributes.",
+            "Harmoni is an AI Based Health Assitant developed in a team of 4 that uses machine learning and sensor data to aggregate a users risk of contracting cardiovascular disease.",
         category: "App Development",
         src: harmoni,
-        link: "https://www.behance.net/gallery/148256469/Entropy-Gaming?log_shim_removal=1",
+        link: "https://www.youtube.com/watch?v=b8yH6oT6mlI&feature=youtu.be",
     },
     {
         title: "J-Tweet",
         description:
-            "Leveraged the established Huntsmen identity to bring a new take on the brands social media graphics.",
+            "Jtweet is an interpolation of the popular social media platform 'Twitter' where users can create accounts with their emails, create text and image based posts, interact with other users, and receive a personalized feed with posts from followed users.",
         category: "Web Development",
         src: jtweet,
-        link: "https://www.behance.net/gallery/110895407/Chicago-Huntsmen",
+        link: "https://github.com/Jpreet927/jtweet",
+    },
+    {
+        title: "Blog Application + CMS",
+        description:
+            "A blogging platform where users can view blog posts and authors can create and edit blog posts. Developed using React.js, Express.js, Node.js, and MongoDB.",
+        category: "Web Development",
+        src: blog,
+        link: "",
     },
     {
         title: "Entertainment Hub",
         description:
-            "Built on top of Rush Gamings core values to invoke a streetwear inspired visual identity.",
+            "A web application that displays movie and television data fetched form the TMDB public API. Built with React.js.",
         category: "Web Development",
         src: entertainment,
-        link: "https://www.behance.net/gallery/116128699/Rush-Gaming",
+        link: "https://jpreet927.github.io/Entertainment-Hub/",
     },
     {
         title: "Allora Salve",
         description:
-            "A fresh rebranding of gaming team Northern Forces centered around custom illustrations.",
+            "An ecommerce website where users can browse products, add products to their cart, manage item quantity, search for products, sort products by price, and review order details. Designed using Photoshop and Figma and implemented in React.js.",
         category: "Web Development",
         src: ecom,
-        link: "https://www.behance.net/gallery/119507687/Northern-Forces-2021",
+        link: "https://jpreet927.github.io/ecommerce-site/",
     },
     {
         title: "Weather Network",
         description:
-            "A fresh rebranding of gaming team Northern Forces centered around custom illustrations.",
+            "A webapp that fetches weather data from the Open Weather API with dynamic icons and background, reflecting the current climate. Built with HTML, CSS, and JavaScript.",
         category: "Web Development",
         src: weather,
-        link: "https://www.behance.net/gallery/119507687/Northern-Forces-2021",
+        link: "https://jpreet927.github.io/weather-app/",
     },
     {
         title: "Resume Builder",
         description:
-            "A fresh rebranding of gaming team Northern Forces centered around custom illustrations.",
+            "A platform to input personal info and work history to generate a Resume. Created in React.js.",
         category: "Web Development",
         src: cvapp,
-        link: "https://www.behance.net/gallery/119507687/Northern-Forces-2021",
+        link: "https://jpreet927.github.io/cv-project/",
     },
 ];
