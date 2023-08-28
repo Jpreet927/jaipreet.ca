@@ -2,9 +2,11 @@ import React from "react";
 import { playfair } from "@/util/fonts";
 import Image from "next/image";
 import me from "@/assets/me.jpg";
-import Sinewave from "@/components/about/sinewave";
-import TransformBox from "@/components/about/transformbox";
-import HTMLTag from "@/components/about/htmltag";
+import sine from "@/assets/icons/About Me Icons/sine.png";
+import fibonacci from "@/assets/icons/About Me Icons/fibonacci.png";
+import tags from "@/assets/icons/About Me Icons/tags.png";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Link from "next/link";
 
 const AboutMe = () => {
     return (
@@ -39,18 +41,34 @@ const AboutMe = () => {
                 </div>
                 <div className="lg:w-[50%] w-full 2xl:px-24 xl:px-12 lg:px-6 md:px-36 px-12 sm:flex hidden flex-col gap-4">
                     <Image src={me} alt="Portrait of Jaipreet" />
-                    <p className="opacity-75 font-light text-xs">
-                        A photo from my most recent trip to Japan! Taken by
-                        Suraj Goraya.
+                    <p className="font-light text-xs">
+                        <span className="opacity-75">
+                            A photo from my most recent trip to Japan!{" "}
+                        </span>
+                        <span className="font-medium">
+                            <Link
+                                href="https://surajgoraya.ca/"
+                                className="text-xs"
+                                target="_blank"
+                            >
+                                Taken by Suraj Goraya.
+                            </Link>
+                        </span>
                     </p>
                 </div>
             </div>
             <div className="bg-white/25 h-[1px] w-full"></div>
-            <div className="flex xl:flex-row flex-col justify-between gap-12 w-full">
-                <div className="flex flex-col gap-4 xl:w-[33%] w-full">
-                    <Sinewave />
+            <div className="flex xl:flex-row flex-col justify-between gap-14 w-full">
+                <div className="flex flex-col gap-6 xl:w-[33%] w-full">
+                    <div className="h-[100px] flex justify-start items-center opacity-75">
+                        <img
+                            src={sine.src}
+                            alt=""
+                            className="max-h-full max-w-full"
+                        />
+                    </div>
                     <h3 className="text-xl font-bold">
-                        My Academic Background
+                        <ArrowForwardIcon /> My Academic Background
                     </h3>
                     <p className="opacity-75 leading-7 sm:text-base text-sm">
                         Leaning on my strengths in Math & Physics, I entered
@@ -61,9 +79,17 @@ const AboutMe = () => {
                         with teams of engineers to achieve a common goal.
                     </p>
                 </div>
-                <div className="flex flex-col gap-4 xl:w-[33%] w-full">
-                    <TransformBox />
-                    <h3 className="text-xl font-bold">A Creative At Heart</h3>
+                <div className="flex flex-col gap-6 xl:w-[33%] w-full">
+                    <div className="h-[100px] flex justify-start items-center opacity-75">
+                        <img
+                            src={fibonacci.src}
+                            alt=""
+                            className="max-h-full max-w-full"
+                        />
+                    </div>
+                    <h3 className="text-xl font-bold">
+                        <ArrowForwardIcon /> A Creative At Heart
+                    </h3>
                     <p className="opacity-75 leading-7 sm:text-base text-sm">
                         I’ve been a creator ever since I was a child. I would
                         spend hours drawing my favourite cartoon/anime
@@ -74,10 +100,16 @@ const AboutMe = () => {
                         view some of my work on my Behance profile!
                     </p>
                 </div>
-                <div className="flex flex-col gap-4 xl:w-[33%] w-full">
-                    <HTMLTag />
+                <div className="flex flex-col gap-6 xl:w-[33%] w-full">
+                    <div className="h-[100px] flex justify-start items-center opacity-75">
+                        <img
+                            src={tags.src}
+                            alt=""
+                            className="max-h-full max-w-full"
+                        />
+                    </div>
                     <h3 className="text-xl font-bold">
-                        My Journey as a Developer
+                        <ArrowForwardIcon /> My Journey as a Developer
                     </h3>
                     <p className="opacity-75 leading-7 sm:text-base text-sm">
                         A couple years ago I eventually found myself getting
