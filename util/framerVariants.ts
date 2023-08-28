@@ -5,13 +5,13 @@ export const textOpacityLine = {
         transition: {
             delay: 1,
             staggerChildren: 0.08,
-            ease: "easeInOut",
+            ease: "easeOut",
         },
     },
 };
 
 export const textOpacityChar = {
-    hidden: { opacity: 0, y: 50, filter: "blur(5px)" },
+    hidden: { opacity: 0, y: 50, filter: "blur(3px)" },
     visible: { opacity: 1, y: 0, filter: "blur(0px)" },
 };
 

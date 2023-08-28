@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { playfair } from "@/util/fonts";
 import Image from "next/image";
 import ticket from "@/assets/branding/Ticket.jpg";
+import { textOpacityChar, textOpacityLine } from "@/util/framerVariants";
 
 const containerVariant = {
     hidden: { opacity: 0 },
@@ -13,10 +14,9 @@ const containerVariant = {
 };
 
 const itemVariant = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0 },
     show: (opacityVal: number) => ({
         opacity: opacityVal ? opacityVal : 1,
-        y: 0,
         transition: { duration: 1 },
     }),
 };
@@ -34,11 +34,31 @@ const Hero = () => {
                     <motion.p variants={itemVariant} custom={1}>
                         Thanks for visiting my portfolio!
                     </motion.p>
-                    <motion.h1
+                    {/* <motion.h1
                         variants={itemVariant}
                         className={`${playfair.className} md:text-8xl text-6xl font-bold`}
                     >
                         Here, you can learn more about me.
+                    </motion.h1> */}
+                    <motion.h1
+                        variants={textOpacityLine}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 2 }}
+                        className={`${playfair.className} text-8xl font-bold`}
+                    >
+                        {"Here, you can learn more about me."
+                            .split("")
+                            .map((char, index) => {
+                                return (
+                                    <motion.span
+                                        key={index}
+                                        variants={textOpacityChar}
+                                    >
+                                        {char}
+                                    </motion.span>
+                                );
+                            })}
                     </motion.h1>
                 </motion.div>
             </section>
