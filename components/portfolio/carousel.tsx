@@ -27,7 +27,7 @@ const variants = {
 
 const Carousel = ({
     images,
-    index = 0,
+    index,
     closeCarousel,
 }: {
     images: Artwork[];
@@ -35,18 +35,15 @@ const Carousel = ({
     closeCarousel: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
     const [currentIndex, setCurrentIndex] = useState(index);
-    const [currentImage, setCurrentImage] = useState(images[currentIndex]);
 
     const setNextImage = () => {
-        console.log(currentIndex);
         setCurrentIndex((currentIndex + 1) % artwork.length);
-        setCurrentImage(images[currentIndex]);
+        console.log(currentIndex);
     };
 
     const setPrevImage = () => {
-        console.log(currentIndex);
         setCurrentIndex((currentIndex - 1 + artwork.length) % artwork.length);
-        setCurrentImage(images[currentIndex]);
+        console.log(currentIndex);
     };
 
     return (
@@ -73,16 +70,12 @@ const Carousel = ({
                     initial="enter"
                     animate="center"
                     exit="exit"
-                    className="w-[80%] h-[90%] relative grid items-center"
+                    className="w-[80%] h-[90%] flex justify-center items-center"
                 >
-                    <Image
-                        src={currentImage.src}
-                        alt={currentImage.title}
-                        quality={50}
-                        fill
-                        className="object-contain"
-                        placeholder="blur"
-                        loading="eager"
+                    <img
+                        src={images[currentIndex].src.src}
+                        alt={images[currentIndex].title}
+                        className="max-h-full max-w-full w-auto h-auto"
                     />
                 </motion.div>
             </div>
