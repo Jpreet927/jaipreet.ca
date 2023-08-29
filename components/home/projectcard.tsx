@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 ease: "easeOut",
             }}
             viewport={{ once: true }}
-            className="relative group overflow-hidden h-[400px] w-full"
+            className="relative group overflow-hidden aspect-video w-full"
         >
             <div className=" absolute bottom-0 left-0 h-[75%] w-full bg-gradient-to-t from-black to-black-0 opacity-50 group-hover:opacity-90 transition ease-out duration-500"></div>
             <div className="absolute bottom-0 left-0 p-4 w-full flex flex-col gap-1 group">

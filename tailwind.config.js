@@ -36,12 +36,21 @@ module.exports = {
                         opacity: 0.9,
                     },
                 },
+                itemFloat: {
+                    "0%, 100%": {
+                        transform: "translateY(0%)",
+                    },
+                    "50%": {
+                        transform: "translateY(3%)",
+                    },
+                },
             },
             animation: {
                 "gradient-pulse-1": "gradientPulse 5s ease-in-out infinite",
                 "gradient-pulse-2": "gradientPulse 3s ease-in-out infinite",
                 "gradient-pulse-3": "gradientPulse 4s ease-in-out infinite",
                 "gradient-pulse-4": "gradientPulse 6s ease-in-out infinite",
+                float: "itemFloat 3s ease-in-out infinite",
             },
         },
     },

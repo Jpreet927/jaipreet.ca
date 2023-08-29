@@ -9,8 +9,13 @@ const IconBox = ({
     iconAlt: string;
 }) => {
     return (
-        <div className="relative 2xl:p-8 xl:p-6 sm:p-10 p-5 bg-slate-700/10 rounded-xl border-white/5 border hover:-translate-y-2 transition-transform ease-in-out duration-500">
-            <Image src={iconPath} alt={iconAlt} objectFit="contain" />
+        <div className="relative 2xl:p-8 xl:p-6 sm:p-8 p-5 bg-slate-700/10 rounded-xl border-white/5 border hover:-translate-y-2 transition-transform ease-in-out duration-500">
+            <Image
+                src={iconPath}
+                alt={iconAlt}
+                objectFit="contain"
+                className="min-w-[20px]"
+            />
             <Image
                 src={iconPath}
                 alt={iconAlt}

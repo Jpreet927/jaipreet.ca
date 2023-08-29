@@ -29,7 +29,7 @@ const Skills = () => {
     const ceiling: number = Math.ceil(skillsIcons.length / 4);
 
     return (
-        <section className="w-full flex flex-col gap-12 2xl:px-64 xl:px-48 lg:px-32 md:px-16 px-8 pt-12 pb-36">
+        <section className="w-full flex flex-col gap-12 2xl:px-72 xl:px-48 lg:px-32 md:px-16 px-8 pt-12 pb-36">
             <h1
                 className={`${playfair.className} sm:text-7xl text-5xl font-bold self-center`}
             >
@@ -43,13 +43,13 @@ const Skills = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className="2xl:w-[60%] xl:w-[50%] w-full flex flex-col gap-12"
+                    className="xl:w-[50%] w-full flex flex-col gap-12"
                 >
                     <div className="flex flex-col gap-2">
                         <h3 className="sm:text-2xl text-xl font-bold">
                             Frontend Development
                         </h3>
-                        <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
+                        <div className="flex sm:flex-row flex-col sm:gap-8 gap-4 text-white/60">
                             <div className="sm:w-[75%] w-full">
                                 <p className="sm:text-base text-sm">
                                     The frontend is my forté. Drawing from my
@@ -82,7 +82,7 @@ const Skills = () => {
                         <h3 className="sm:text-2xl text-xl font-bold">
                             Backend Development
                         </h3>
-                        <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
+                        <div className="flex sm:flex-row flex-col sm:gap-8 gap-4 text-white/60">
                             <div className="sm:w-[75%] w-full">
                                 <p className="sm:text-base text-sm">
                                     My experience encompasses architecting
@@ -116,7 +116,7 @@ const Skills = () => {
                         <h3 className="sm:text-2xl text-xl font-bold">
                             Design
                         </h3>
-                        <div className="flex sm:flex-row flex-col sm:gap-16 gap-4 text-white/60">
+                        <div className="flex sm:flex-row flex-col sm:gap-8 gap-4 text-white/60">
                             <div className="sm:w-[75%] w-full">
                                 <p className="sm:text-base text-sm">
                                     I have almost 7 years of graphic design
@@ -145,14 +145,14 @@ const Skills = () => {
                     </div>
                 </motion.div>
                 {/* ICONS */}
-                <div className="2xl:w-[40%] xl:w-[50%] md:w-[66%] w-[90%] flex gap-4 items-center">
+                <div className="xl:w-[50%] md:w-[66%] sm:w-[80%] w-[100%] 2xl:px-12 px-0 flex sm:gap-4 gap-2 items-center">
                     <motion.div
                         variants={iconColVariant}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
                         transition={{ delay: 0 }}
-                        className="w-[25%] flex flex-col gap-4 translate-y-15"
+                        className="w-[25%] flex flex-col sm:gap-4 gap-2 translate-y-15"
                     >
                         {skillsIcons.slice(0, floor).map((icon, index) => (
                             <motion.div
@@ -176,7 +176,7 @@ const Skills = () => {
                         whileInView="show"
                         viewport={{ once: true }}
                         transition={{ delay: 0.25 }}
-                        className="w-[25%] flex flex-col gap-4 translate-y-5"
+                        className="w-[25%] flex flex-col sm:gap-4 gap-2 translate-y-5"
                     >
                         {skillsIcons
                             .slice(floor, floor + ceiling)
@@ -202,7 +202,7 @@ const Skills = () => {
                         whileInView="show"
                         viewport={{ once: true }}
                         transition={{ delay: 0.5 }}
-                        className="w-[25%] flex flex-col gap-4 -translate-y-5"
+                        className="w-[25%] flex flex-col sm:gap-4 gap-2 -translate-y-5"
                     >
                         {skillsIcons
                             .slice(floor + ceiling, floor + 2 * ceiling)
@@ -228,7 +228,7 @@ const Skills = () => {
                         whileInView="show"
                         viewport={{ once: true }}
                         transition={{ delay: 0.75 }}
-                        className="w-[25%] flex flex-col gap-4 -translate-y-15"
+                        className="w-[25%] flex flex-col sm:gap-4 gap-2 -translate-y-15"
                     >
                         {skillsIcons
                             .slice(floor + 2 * ceiling, skillsIcons.length)
