@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { playfair } from "@/util/fonts";
-import Image from "next/image";
-import ticket from "@/assets/branding/Ticket.jpg";
+import memoji from "@/assets/branding/memoji.png";
 import { textOpacityChar, textOpacityLine } from "@/util/framerVariants";
 
 const containerVariant = {
@@ -32,34 +31,35 @@ const Hero = () => {
                     className="flex flex-col lg:w-[75%] md:w-[75%] w-full items-center text-center drop-shadow-2xl"
                 >
                     <motion.p variants={itemVariant} custom={1}>
-                        Thanks for visiting my portfolio!
+                        Thanks for stopping by!
                     </motion.p>
-                    {/* <motion.h1
-                        variants={itemVariant}
-                        className={`${playfair.className} md:text-8xl text-6xl font-bold`}
-                    >
-                        Here, you can learn more about me.
-                    </motion.h1> */}
-                    <motion.h1
-                        variants={textOpacityLine}
-                        initial="hidden"
-                        animate="visible"
-                        transition={{ delay: 2 }}
-                        className={`${playfair.className} text-8xl font-bold`}
-                    >
-                        {"Here, you can learn more about me."
-                            .split("")
-                            .map((char, index) => {
-                                return (
-                                    <motion.span
-                                        key={index}
-                                        variants={textOpacityChar}
-                                    >
-                                        {char}
-                                    </motion.span>
-                                );
-                            })}
-                    </motion.h1>
+                    <div className="flex flex-col gap-2 items-center">
+                        <motion.h1
+                            variants={textOpacityLine}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{ delay: 2 }}
+                            className={`${playfair.className} md:text-8xl text-6xl font-bold`}
+                        >
+                            {"Here, you can learn more about me."
+                                .split("")
+                                .map((char, index) => {
+                                    return (
+                                        <motion.span
+                                            key={index}
+                                            variants={textOpacityChar}
+                                        >
+                                            {char}
+                                        </motion.span>
+                                    );
+                                })}
+                        </motion.h1>
+                        <img
+                            src={memoji.src}
+                            alt="A memoji of Jaipreet"
+                            className="h-[150px] animate-float"
+                        />
+                    </div>
                 </motion.div>
             </section>
         </div>
