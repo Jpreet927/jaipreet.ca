@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const GalleryImage = ({ img }: { img: Artwork }) => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
                 duration: 1,
