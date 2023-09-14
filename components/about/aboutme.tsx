@@ -60,7 +60,7 @@ const AboutMe = () => {
             <div className="bg-white/25 h-[1px] w-full"></div>
             <div className="flex xl:flex-row flex-col justify-between gap-14 w-full">
                 <div className="flex flex-col gap-6 xl:w-[33%] w-full">
-                    <div className="h-[100px] flex justify-start items-center opacity-75">
+                    <div className="h-[80px] flex justify-start items-center opacity-100">
                         <img
                             src={sine.src}
                             alt=""
@@ -80,7 +80,7 @@ const AboutMe = () => {
                     </p>
                 </div>
                 <div className="flex flex-col gap-6 xl:w-[33%] w-full">
-                    <div className="h-[100px] flex justify-start items-center opacity-75">
+                    <div className="h-[80px] flex justify-start items-center opacity-100">
                         <img
                             src={fibonacci.src}
                             alt=""
@@ -101,7 +101,7 @@ const AboutMe = () => {
                     </p>
                 </div>
                 <div className="flex flex-col gap-6 xl:w-[33%] w-full">
-                    <div className="h-[100px] flex justify-start items-center opacity-75">
+                    <div className="h-[80px] flex justify-start items-center opacity-100">
                         <img
                             src={tags.src}
                             alt=""
