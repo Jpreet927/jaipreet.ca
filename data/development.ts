@@ -2,6 +2,7 @@ import { Project } from "@/components/home/projectcard";
 
 import harmoni from "@/assets/images/Development Images/Harmoni.jpg";
 import jtweet from "@/assets/images/Development Images/Jtweet.jpeg";
+import unwrapped from "@/assets/images/Development Images/Spotify-Visualizer-App.jpg";
 import blog from "@/assets/images/Development Images/BlogAPI.jpg";
 import entertainment from "@/assets/images/Development Images/Entertainment-Hub.jpg";
 import ecom from "@/assets/images/Development Images/Ecommerce.jpg";
@@ -24,6 +25,14 @@ export const projects: Project[] = [
         category: "Web Development",
         src: jtweet,
         link: "https://github.com/Jpreet927/jtweet",
+    },
+    {
+        title: "Spotify Unwrapped",
+        description:
+            "Unwrapped is a web application that allows users to log in with their Spotify accounts to view their recent listening metrics without having to wait for Spotify Wrapped at the end of the year. Built with Next.js.",
+        category: "Web Development",
+        src: unwrapped,
+        link: "https://github.com/Jpreet927/Spotify-Unwrapped",
     },
     {
         title: "Blog Application + CMS",

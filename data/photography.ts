@@ -9,6 +9,7 @@ import img6 from "@/assets/images/Photography Images/tokyo-tower.jpg";
 import img7 from "@/assets/images/Photography Images/kyoto.jpg";
 import img8 from "@/assets/images/Photography Images/jaipreet-singh--vD3P6IjmAw-unsplash.jpg";
 import img9 from "@/assets/images/Photography Images/performer.jpg";
+import img10 from "@/assets/images/Photography Images/IMG_0141.jpg";
 
 export const photos: Artwork[] = [
     {
@@ -46,5 +47,9 @@ export const photos: Artwork[] = [
     {
         title: "Performer at Ghibli Museum",
         src: img9,
+    },
+    {
+        title: "Stairs at Kyoto Temple",
+        src: img10,
     },
 ];

@@ -3,6 +3,9 @@ import bleach from "@/assets/images/Design Images/Bleach-Poster.jpg";
 import yakouchuu from "@/assets/images/Design Images/Indigo-La-End-Yakouchuu.jpg";
 import utopia from "@/assets/images/Design Images/Utopia.jpg";
 import ingigolaend from "@/assets/images/Design Images/Indigo-La-End-1.jpg";
+import scump from "@/assets/images/Design Images/Scump-Poster.jpg";
+import freedom from "@/assets/images/Design Images/Freedom.jpg";
+import sea from "@/assets/images/Design Images/The-Other-Side-of-the-Sea.jpg";
 import cg from "@/assets/images/Design Images/Code-Geass-Painting-Final.jpg";
 import tlou2 from "@/assets/images/Design Images/Last-of-Us-2-Poster-2-updated.jpg";
 import interframe from "@/assets/images/Design Images/Interframe - everything will be ok.jpg";
@@ -78,6 +81,18 @@ export const artwork: Artwork[] = [
     {
         title: "Indigo La End Poster",
         src: ingigolaend,
+    },
+    {
+        title: "OpTic Scump Poster",
+        src: scump,
+    },
+    {
+        title: "Freedom (Attack on Titan)",
+        src: freedom,
+    },
+    {
+        title: "The Other Side of the Sea (Attack on Titan)",
+        src: sea,
     },
     {
         title: "Last of Us 2 Poster",
