@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import { Artwork, artwork } from "@/data/design";
-import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { Artwork } from "@/data/design";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import CloseIcon from "@mui/icons-material/Close";
@@ -37,13 +36,11 @@ const Carousel = ({
     const [currentIndex, setCurrentIndex] = useState(index);
 
     const setNextImage = () => {
-        setCurrentIndex((currentIndex + 1) % artwork.length);
-        console.log(currentIndex);
+        setCurrentIndex((currentIndex + 1) % images.length);
     };
 
     const setPrevImage = () => {
-        setCurrentIndex((currentIndex - 1 + artwork.length) % artwork.length);
-        console.log(currentIndex);
+        setCurrentIndex((currentIndex - 1 + images.length) % images.length);
     };
 
     return (
