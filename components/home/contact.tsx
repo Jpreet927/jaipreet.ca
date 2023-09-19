@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
     return (
-        <section className="h-screen w-full relative grid items-center overflow-hidden">
-            <div className="w-full xl:px-64 lg:px-32 md:px-16 px-4 flex z-10 items-center lg:flex-row flex-col lg:gap-0 gap-12">
+        <section className="h-screen w-full relative flex justify-center items-center overflow-hidden">
+            <div className="w-full max-w-[2560px] xl:px-64 lg:px-32 md:px-16 px-4 flex z-10 items-center lg:flex-row flex-col lg:gap-0 gap-12">
                 <div className="lg:w-[50%] w-[100%] flex flex-col gap-4 px-8">
                     <h1
                         className={`${playfair.className} sm:text-7xl text-5xl font-bold`}

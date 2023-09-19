@@ -36,7 +36,7 @@ const BusinessCard = () => {
 
     return (
         <div
-            className="flex flex-col justify-between h-[40%] sm:min-h-[300px] sm:min-w-[450px] min-h-[250px] min-w-[200px] max-w-[700px] w-full lg:absolute static top-[30%] left-0 bg-black/50 xl:p-12 sm:p-8 p-6 backdrop-blur-xl border-slate-700/40 rounded-xl border transform-none hover:bg-black/40 hover:scale-[0.97] transition duration-300 ease-[cubic-bezier(0.03,0.98,0.52,0.99)]"
+            className="flex flex-col justify-between aspect-video w-full lg:absolute static top-[30%] left-0 bg-black/50 xl:p-12 sm:p-8 p-6 backdrop-blur-xl border-slate-700/40 rounded-xl border transform-none hover:bg-black/40 hover:scale-[0.97] transition duration-300 ease-[cubic-bezier(0.03,0.98,0.52,0.99)]"
             onMouseOver={(e) => handleMouseOver(e)}
             onMouseLeave={(e) => handleMouseLeave(e)}
             ref={ref}

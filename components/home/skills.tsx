@@ -29,7 +29,7 @@ const Skills = () => {
     const ceiling: number = Math.ceil(skillsIcons.length / 4);
 
     return (
-        <section className="w-full flex flex-col gap-12 2xl:px-72 xl:px-48 lg:px-32 md:px-16 px-8 pt-12 pb-36">
+        <section className="w-full max-w-[2560px] flex flex-col gap-12 2xl:px-72 xl:px-48 lg:px-32 md:px-16 px-8 pt-12 pb-36">
             <h1
                 className={`${playfair.className} sm:text-7xl text-5xl font-bold self-center`}
             >

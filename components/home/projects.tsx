@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
     return (
-        <div className="relative flex flex-col items-center gap-12 xl:px-64 lg:px-32 md:px-16 px-8 py-24">
+        <div className="w-full max-w-[2560px] relative flex flex-col items-center gap-12 xl:px-64 lg:px-32 md:px-16 px-8 py-24">
             <div className="w-full h-[25%] absolute bottom-0 left-0 bg-gradient-to-t from-background to-black-0 z-10"></div>
             <motion.div
                 initial={{ scaleY: 0, opacity: 0 }}

@@ -12,7 +12,7 @@ const PhotographyPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
-        <div className="relative flex flex-col gap-16">
+        <div className="relative flex flex-col justify-center items-center gap-16">
             {carouselVisible && (
                 <div className="absolute top-0 left-0 h-screen w-full">
                     <Carousel
@@ -29,7 +29,7 @@ const PhotographyPage = () => {
                 }}
                 title={"Photography"}
             />
-            <div className="xl:px-64 lg:px-32 md:px-16 px-8 mb-24 flex flex-col gap-16">
+            <div className="xl:px-64 lg:px-32 md:px-16 px-8 mb-24 flex flex-col w-full max-w-[2560px] gap-16">
                 <div className="flex flex-col gap-6">
                     <div className="flex gap-6 items-center">
                         <h3 className="text-2xl font-bold whitespace-nowrap">

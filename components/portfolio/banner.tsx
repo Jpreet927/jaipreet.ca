@@ -25,7 +25,7 @@ const Banner = ({
                     alt={banner.alt}
                     quality={75}
                     draggable={false}
-                    className="h-full"
+                    className="h-full w-full"
                     style={{ objectFit: "cover" }}
                     placeholder="blur"
                 />

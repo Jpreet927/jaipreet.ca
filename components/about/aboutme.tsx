@@ -10,8 +10,8 @@ import Link from "next/link";
 
 const AboutMe = () => {
     return (
-        <section className="flex flex-col xl:px-64 lg:px-32 md:px-16 px-8 py-24 gap-24">
-            <div className="flex lg:flex-row flex-col gap-12">
+        <section className="flex flex-col justify-center items-center xl:px-64 lg:px-32 md:px-16 px-8 py-24 gap-24">
+            <div className="flex lg:flex-row flex-col gap-12 w-full max-w-[2560px]">
                 <div className="lg:w-[50%] lg:px-0 px-0 w-full flex flex-col gap-16 [&>p]:opacity-75">
                     <h1
                         className={`${playfair.className} md:text-7xl text-5xl font-bold`}
@@ -57,8 +57,8 @@ const AboutMe = () => {
                     </p>
                 </div>
             </div>
-            <div className="bg-white/25 h-[1px] w-full"></div>
-            <div className="flex xl:flex-row flex-col justify-between gap-14 w-full">
+            <div className="bg-white/25 h-[1px] w-full max-w-[2560px]"></div>
+            <div className="flex xl:flex-row flex-col justify-between gap-14 w-full max-w-[2560px]">
                 <div className="flex flex-col gap-6 xl:w-[33%] w-full">
                     <div className="h-[80px] flex justify-start items-center opacity-100">
                         <img

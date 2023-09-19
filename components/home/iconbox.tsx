@@ -9,19 +9,21 @@ const IconBox = ({
     iconAlt: string;
 }) => {
     return (
-        <div className="relative 2xl:p-8 xl:p-6 sm:p-8 p-5 bg-slate-700/10 rounded-xl border-white/5 border hover:-translate-y-2 transition-transform ease-in-out duration-500">
+        <div className="relative aspect-square flex justify-center items-center bg-slate-700/10 rounded-xl border-white/5 border hover:-translate-y-2 transition-transform ease-in-out duration-500">
             <Image
                 src={iconPath}
                 alt={iconAlt}
                 objectFit="contain"
-                className="min-w-[20px]"
+                className="w-[40%]"
             />
-            <Image
-                src={iconPath}
-                alt={iconAlt}
-                className="absolute top-0 left-0 blur-xl 2xl:p-8 xl:p-6 sm:p-10 p-6 opacity-60 hover:opacity-90 transition-opacity ease-in-out duration-500"
-                objectFit="contain"
-            />
+            <div className="flex justify-center items-center w-full h-full absolute top-0 left-0">
+                <Image
+                    src={iconPath}
+                    alt={iconAlt}
+                    className="blur-xl w-[60%] opacity-40 hover:opacity-60 transition-opacity ease-in-out duration-500"
+                    objectFit="contain"
+                />
+            </div>
         </div>
     );
 };
