@@ -2,6 +2,7 @@ import { Project } from "@/components/home/projectcard";
 
 import harmoni from "@/assets/images/Development Images/Harmoni.jpg";
 import jtweet from "@/assets/images/Development Images/Jtweet.jpeg";
+import apertureio from "@/assets/images/Development Images/ApertureIO.jpg";
 import unwrapped from "@/assets/images/Development Images/Spotify-Visualizer-App.jpg";
 import blog from "@/assets/images/Development Images/BlogAPI.jpg";
 import entertainment from "@/assets/images/Development Images/Entertainment-Hub.jpg";
@@ -25,6 +26,14 @@ export const projects: Project[] = [
         category: "Web Development",
         src: jtweet,
         link: "https://github.com/Jpreet927/jtweet",
+    },
+    {
+        title: "Aperture.io",
+        description:
+            "Aperture.io is an online repository where photographers can upload and showcase their work. Built with Next.js, Express.js, Tailwind, and hosted on Google Cloud Platform.",
+        category: "Web Development",
+        src: apertureio,
+        link: "https://github.com/Jpreet927/Aperture.io",
     },
     {
         title: "Spotify Unwrapped",
