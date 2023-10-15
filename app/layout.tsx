@@ -1,8 +1,9 @@
-import Navbar from "@/components/navbar";
-import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { inter } from "@/util/fonts";
+import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Jaipreet Singh",
@@ -20,6 +21,7 @@ export default function RootLayout({
                 <Navbar />
                 {children}
                 <Footer />
+                <Analytics />
             </body>
         </html>
     );
