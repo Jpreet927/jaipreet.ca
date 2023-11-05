@@ -2,16 +2,15 @@ import jtweet from "@/assets/images/Project Thumbnails/Jtweet.jpeg";
 import harmoni from "@/assets/images/Project Thumbnails/Harmoni.jpg";
 import apertureio from "@/assets/images/Project Thumbnails/ApertureIO.jpg";
 import unwrapped from "@/assets/images/Project Thumbnails/Spotify-Visualizer-App.jpg";
-import ecommerce from "@/assets/images/Project Thumbnails/Ecommerce.jpg";
-import entropy from "@/assets/images/Project Thumbnails/Entropy.jpg";
-import entertainmenthub from "@/assets/images/Project Thumbnails/Entertainment-Hub.jpg";
+import blog from "@/assets/images/Development Images/BlogAPI-2.png";
+import rush from "@/assets/images/Design Images/project thumbnails/Rush-Rebrand.jpg";
 import { Project } from "@/components/home/projectcard";
 
 export const projects: Project[] = [
     {
         title: "JTweet (Twitter Clone)",
         description:
-            "Jtweet is an interpolation of the popular social media platform 'Twitter' where users can create accounts with their emails, create text and image based posts, interact with other users, and receive a personalized feed with posts from followed users.",
+            "Jtweet is an interpolation of the popular social media platform 'Twitter' where users can create accounts with their emails, create text and image based posts, interact with other users, and receive a personalized feed.",
         category: "Web Development",
         src: jtweet,
         link: "https://github.com/Jpreet927/jtweet",
@@ -41,19 +40,19 @@ export const projects: Project[] = [
         link: "https://github.com/Jpreet927/Spotify-Unwrapped",
     },
     {
-        title: "Allora Salve",
+        title: "Blog Application + CMS",
         description:
-            "An ecommerce website where users can browse products, add products to their cart, manage item quantity, search for products, sort products by price, and review order details. Designed using Photoshop and Figma and implemented in React.js.",
+            "A blogging platform where users can view blog posts and authors/admins can moderate site content through CRUD operations. Developed using React.js, Express.js, Node.js, and MongoDB.",
         category: "Web Development",
-        src: ecommerce,
-        link: "https://jpreet927.github.io/ecommerce-site/",
+        src: blog,
+        link: "https://github.com/Jpreet927/Blog-API",
     },
     {
-        title: "Entropy Gaming",
+        title: "Rush Gaming",
         description:
-            "Established new social media assets and brand guidelines to reflect Entropy Gaming's core brand attributes.",
+            "A brand identity project consisting of social media graphics and animations. Built on top of Rush Gamings core values to invoke a streetwear inspired visual identity.",
         category: "Graphic Design",
-        src: entropy,
-        link: "https://www.behance.net/gallery/148256469/Entropy-Gaming",
+        src: rush,
+        link: "https://www.behance.net/gallery/116128699/Rush-Gaming",
     },
 ];

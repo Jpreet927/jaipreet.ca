@@ -49,7 +49,7 @@ export const projects: Project[] = [
             "A blogging platform where users can view blog posts and authors can create and edit blog posts. Developed using React.js, Express.js, Node.js, and MongoDB.",
         category: "Web Development",
         src: blog,
-        link: "",
+        link: "https://github.com/Jpreet927/Blog-API",
     },
     {
         title: "Entertainment Hub",
