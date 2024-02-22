@@ -10,15 +10,12 @@ import img7 from "@/assets/images/Photography Images/kyoto.jpg";
 import img8 from "@/assets/images/Photography Images/jaipreet-singh--vD3P6IjmAw-unsplash.jpg";
 import img9 from "@/assets/images/Photography Images/performer.jpg";
 import img10 from "@/assets/images/Photography Images/IMG_0141.jpg";
+import img11 from "@/assets/images/Photography Images/kyoto-street.jpg";
 
 export const photos: Artwork[] = [
     {
         title: "Fushimi Inari Shrine",
         src: img1,
-    },
-    {
-        title: "Omoide Yokocho",
-        src: img2,
     },
     {
         title: "Inokashira Park",
@@ -27,6 +24,10 @@ export const photos: Artwork[] = [
     {
         title: "High Park",
         src: img4,
+    },
+    {
+        title: "Omoide Yokocho",
+        src: img2,
     },
     {
         title: "Shibuya Crossing",
@@ -51,5 +52,9 @@ export const photos: Artwork[] = [
     {
         title: "Stairs at Kyoto Temple",
         src: img10,
+    },
+    {
+        title: "Kyoto Street",
+        src: img11,
     },
 ];

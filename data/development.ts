@@ -1,6 +1,8 @@
 import { Project } from "@/components/home/projectcard";
 
 import harmoni from "@/assets/images/Development Images/Harmoni.jpg";
+import assets from "@/assets/images/Development Images/ASSETS2024.jpg";
+import cdlwiki from "@/assets/images/Development Images/CDLWiki.jpg";
 import jtweet from "@/assets/images/Development Images/Jtweet.jpeg";
 import apertureio from "@/assets/images/Development Images/ApertureIO.jpg";
 import unwrapped from "@/assets/images/Development Images/Spotify-Visualizer-App.jpg";
@@ -20,12 +22,20 @@ export const projects: Project[] = [
         link: "https://www.youtube.com/watch?v=b8yH6oT6mlI&feature=youtu.be",
     },
     {
-        title: "J-Tweet",
+        title: "ASSETS 2024",
         description:
-            "Jtweet is an interpolation of the popular social media platform 'Twitter' where users can create accounts with their emails, create text and image based posts, interact with other users, and receive a personalized feed with posts from followed users.",
+            "Helped develop the public website for the ASSETS 2024 conference - the premier forum for presenting research on the design, evaluation, use, and education related to computing for people with disabilities and older adults.",
         category: "Web Development",
-        src: jtweet,
-        link: "https://github.com/Jpreet927/jtweet",
+        src: assets,
+        link: "https://assets24.sigaccess.org/",
+    },
+    {
+        title: "Call of Duty League 2023/24",
+        description:
+            "Designed a relational database model for storing data related to the Call of Duty Esports League 2023/24 season, supplemented with a Spring Boot REST API and a React frontend.",
+        category: "Web Development",
+        src: cdlwiki,
+        link: "https://github.com/Jpreet927/CDL-Wiki",
     },
     {
         title: "Aperture.io",
@@ -34,6 +44,14 @@ export const projects: Project[] = [
         category: "Web Development",
         src: apertureio,
         link: "https://github.com/Jpreet927/Aperture.io",
+    },
+    {
+        title: "J-Tweet",
+        description:
+            "Jtweet is an interpolation of the popular social media platform 'Twitter' where users can create accounts with their emails, create text and image based posts, interact with other users, and receive a personalized feed with posts from followed users.",
+        category: "Web Development",
+        src: jtweet,
+        link: "https://github.com/Jpreet927/jtweet",
     },
     {
         title: "Spotify Unwrapped",
@@ -75,12 +93,12 @@ export const projects: Project[] = [
         src: weather,
         link: "https://jpreet927.github.io/weather-app/",
     },
-    {
-        title: "Resume Builder",
-        description:
-            "A platform to input personal info and work history to generate a Resume. Created in React.js.",
-        category: "Web Development",
-        src: cvapp,
-        link: "https://jpreet927.github.io/cv-project/",
-    },
+    // {
+    //     title: "Resume Builder",
+    //     description:
+    //         "A platform to input personal info and work history to generate a Resume. Created in React.js.",
+    //     category: "Web Development",
+    //     src: cvapp,
+    //     link: "https://jpreet927.github.io/cv-project/",
+    // },
 ];

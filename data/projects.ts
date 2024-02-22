@@ -3,17 +3,27 @@ import harmoni from "@/assets/images/Project Thumbnails/Harmoni.jpg";
 import apertureio from "@/assets/images/Project Thumbnails/ApertureIO.jpg";
 import unwrapped from "@/assets/images/Project Thumbnails/Spotify-Visualizer-App.jpg";
 import blog from "@/assets/images/Development Images/BlogAPI-2.png";
+import assets from "@/assets/images/Development Images/ASSETS2024.jpg";
+import cdlwiki from "@/assets/images/Development Images/CDLWiki.jpg";
 import rush from "@/assets/images/Design Images/project thumbnails/Rush-Rebrand.jpg";
 import { Project } from "@/components/home/projectcard";
 
 export const projects: Project[] = [
     {
-        title: "JTweet (Twitter Clone)",
+        title: "Call of Duty League 2023/24",
         description:
-            "Jtweet is an interpolation of the popular social media platform 'Twitter' where users can create accounts with their emails, create text and image based posts, interact with other users, and receive a personalized feed.",
+            "Designed a relational database model for storing data related to the Call of Duty Esports League 2023/24 season, supplemented with a Spring Boot REST API and a React frontend.",
         category: "Web Development",
-        src: jtweet,
-        link: "https://github.com/Jpreet927/jtweet",
+        src: cdlwiki,
+        link: "https://github.com/Jpreet927/CDL-Wiki",
+    },
+    {
+        title: "ASSETS 2024",
+        description:
+            "Helped develop the public website for the ASSETS 2024 conference - the premier forum for presenting research on the design, evaluation, use, and education related to computing for people with disabilities and older adults.",
+        category: "Web Development",
+        src: assets,
+        link: "https://assets24.sigaccess.org/",
     },
     {
         title: "Harmoni",
@@ -39,20 +49,20 @@ export const projects: Project[] = [
         src: unwrapped,
         link: "https://github.com/Jpreet927/Spotify-Unwrapped",
     },
+    // {
+    //     title: "Blog Application + CMS",
+    //     description:
+    //         "A blogging platform where users can view blog posts and authors/admins can moderate site content through CRUD operations. Developed using React.js, Express.js, Node.js, and MongoDB.",
+    //     category: "Web Development",
+    //     src: blog,
+    //     link: "https://github.com/Jpreet927/Blog-API",
+    // },
     {
-        title: "Blog Application + CMS",
+        title: "JTweet (Twitter Clone)",
         description:
-            "A blogging platform where users can view blog posts and authors/admins can moderate site content through CRUD operations. Developed using React.js, Express.js, Node.js, and MongoDB.",
+            "Jtweet is an interpolation of the popular social media platform 'Twitter' where users can create accounts with their emails, create text and image based posts, interact with other users, and receive a personalized feed.",
         category: "Web Development",
-        src: blog,
-        link: "https://github.com/Jpreet927/Blog-API",
-    },
-    {
-        title: "Rush Gaming",
-        description:
-            "A brand identity project consisting of social media graphics and animations. Built on top of Rush Gamings core values to invoke a streetwear inspired visual identity.",
-        category: "Graphic Design",
-        src: rush,
-        link: "https://www.behance.net/gallery/116128699/Rush-Gaming",
+        src: jtweet,
+        link: "https://github.com/Jpreet927/jtweet",
     },
 ];
