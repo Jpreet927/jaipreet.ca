@@ -32,12 +32,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 <p className="text-[0.6rem] tracking-[0.2rem] opacity-0 translate-y-10 group-hover:opacity-100 group-hover:translate-y-0 transition ease-in-out duration-700">
                     {project.category.toUpperCase()}
                 </p>
-                <div className="flex justify-between translate-y-10 group-hover:translate-y-0 transition ease-in-out duration-700">
-                    <h3 className="text-xl font-bold">{project.title}</h3>
-                    <Link href={project.link} target="_blank">
+                <Link href={project.link} target="_blank">
+                    <div className="flex justify-between translate-y-10 group-hover:translate-y-0 transition ease-in-out duration-700">
+                        <h3 className="text-xl font-bold">{project.title}</h3>
                         <ArrowOutwardIcon />
-                    </Link>
-                </div>
+                    </div>
+                </Link>
                 <p className="text-xs opacity-0 translate-y-10 group-hover:opacity-75 group-hover:translate-y-0 transition ease-in-out duration-700">
                     {project.description}
                 </p>
