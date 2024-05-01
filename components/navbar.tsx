@@ -26,7 +26,14 @@ const Navbar = () => {
             }
         };
 
+        const removeNavBackground = () => {
+            if (window.innerWidth > 640) {
+                setMobileViewVisible(false);
+            }
+        };
+
         window.addEventListener("scroll", toggleBackground);
+        window.addEventListener("resize", removeNavBackground);
     }, []);
 
     return (
@@ -37,8 +44,10 @@ const Navbar = () => {
         >
             <nav
                 className={`flex sm:flex-row flex-col sm:justify-between items-center sm:h-fit h-full px-8 xl:px-64 lg:px-32 md:px-16 flex-shrink-0 transition-all ease-in-out duration-500 ${
-                    navBackgroundVisible ? "bg-black sm:py-1" : "sm:py-12"
-                } ${mobileViewVisible ? "bg-black" : ""}`}
+                    navBackgroundVisible || mobileViewVisible
+                        ? "bg-black sm:py-1"
+                        : "sm:py-12"
+                }`}
             >
                 <div className="relative sm:w-[80px] w-full h-[80px] shrink-0 flex justify-between items-center">
                     <Image
@@ -47,15 +56,22 @@ const Navbar = () => {
                         className="flex-shrink-0"
                         style={{ objectFit: "contain", width: "80px" }}
                     />
-                    <div
-                        onClick={() => setMobileViewVisible(!mobileViewVisible)}
-                        className="sm:hidden"
-                    >
-                        {mobileViewVisible ? <CloseIcon /> : <MenuIcon />}
+                    <div className="sm:hidden block">
+                        {mobileViewVisible ? (
+                            <CloseIcon
+                                onClick={() => setMobileViewVisible(false)}
+                                className="cursor-pointer"
+                            />
+                        ) : (
+                            <MenuIcon
+                                onClick={() => setMobileViewVisible(true)}
+                                className="cursor-pointer"
+                            />
+                        )}
                     </div>
                 </div>
                 <ul
-                    className={`sm:flex sm:flex-row flex-col sm:gap-24 gap-12 sm:h-[80px] h-full justify-center items-center sm:opacity-100 transition-opacity ease-in-out duration-300 ${
+                    className={`sm:flex sm:flex-row flex-col sm:gap-24 gap-12 sm:h-[80px] h-full sm:justify-center justify-start sm:items-center items-start sm:w-auto w-full sm:py-0 py-12 sm:opacity-100 transition-opacity ease-in-out duration-300 ${
                         mobileViewVisible
                             ? "opacity-100f flex"
                             : "opacity-0 hidden"
@@ -67,11 +83,11 @@ const Navbar = () => {
                     >
                         <Link
                             href="/"
-                            className={
+                            className={`sm:text-base text-2xl ${
                                 path === "/"
                                     ? "opacity-100"
                                     : "opacity-70 hover:opacity-100 transition-opacity duration-500"
-                            }
+                            }`}
                         >
                             Home
                         </Link>
@@ -95,34 +111,34 @@ const Navbar = () => {
                             />
                         )}
                     </li>
-                    <div className="sm:hidden flex flex-col gap-12 items-center">
+                    <div className="sm:hidden flex flex-col gap-12 sm:items-center items-start">
                         <Link
                             href="/portfolio/development"
-                            className={
+                            className={`sm:text-base text-2xl ${
                                 path === "/portfolio/development"
                                     ? "font-bold"
                                     : ""
-                            }
+                            }`}
                             onClick={() => setMobileViewVisible(false)}
                         >
                             Development
                         </Link>
                         <Link
                             href="/portfolio/design"
-                            className={
+                            className={`sm:text-base text-2xl ${
                                 path === "/portfolio/design" ? "font-bold" : ""
-                            }
+                            }`}
                             onClick={() => setMobileViewVisible(false)}
                         >
                             Design
                         </Link>
                         <Link
                             href="/portfolio/photography"
-                            className={
+                            className={`sm:text-base text-2xl ${
                                 path === "/portfolio/photography"
                                     ? "font-bold"
                                     : ""
-                            }
+                            }`}
                             onClick={() => setMobileViewVisible(false)}
                         >
                             Photography
@@ -134,11 +150,11 @@ const Navbar = () => {
                     >
                         <Link
                             href="/about"
-                            className={
+                            className={`sm:text-base text-2xl ${
                                 path === "/about"
                                     ? "opacity-100"
                                     : "opacity-70 hover:opacity-100 transition-opacity duration-500"
-                            }
+                            }`}
                         >
                             About
                         </Link>
