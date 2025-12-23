@@ -6,13 +6,13 @@ import AboutMe from "@/components/about/aboutme";
 import ThankYou from "@/components/about/thankyou";
 
 const AboutPage = () => {
-    return (
-        <main className="w-screen flex flex-col">
-            <Hero />
-            <AboutMe />
-            <ThankYou />
-        </main>
-    );
+  return (
+    <main className="w-screen flex flex-col">
+      <Hero />
+      <AboutMe />
+      <ThankYou />
+    </main>
+  );
 };
 
 export default AboutPage;
