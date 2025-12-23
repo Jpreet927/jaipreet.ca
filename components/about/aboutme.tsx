@@ -12,7 +12,7 @@ const AboutMe = () => {
   return (
     <section className="flex flex-col justify-center items-center xl:px-64 lg:px-32 md:px-16 px-8 py-24 gap-24">
       <div className="flex lg:flex-row flex-col gap-12 w-full max-w-[2560px]">
-        <div className="lg:w-[50%] lg:px-0 px-0 w-full flex flex-col gap-16 [&>p]:opacity-75">
+        <div className="lg:w-[50%] lg:px-0 px-0 w-full flex flex-col gap-16 [&>p]:text-text-secondary">
           <h1
             className={`${playfair.className} md:text-7xl text-5xl font-bold`}
           >
@@ -39,7 +39,7 @@ const AboutMe = () => {
         <div className="lg:w-[50%] w-full 2xl:px-24 xl:px-12 lg:px-6 md:px-36 px-12 sm:flex hidden flex-col gap-4">
           <Image src={me} alt="Portrait of Jaipreet" />
           <p className="font-light text-xs">
-            <span className="opacity-75">
+            <span className="text-text-secondary">
               A photo from my most recent trip to Japan!{" "}
             </span>
             <span className="font-medium">
@@ -63,7 +63,7 @@ const AboutMe = () => {
           <h3 className="text-xl font-bold">
             <ArrowForwardIcon /> My Academic Background
           </h3>
-          <p className="opacity-75 leading-7 sm:text-base text-sm">
+          <p className="text-text-secondary leading-7 sm:text-base text-sm">
             Leaning on my strengths in Math & Physics, I entered university
             enrolled in an Electrical Engineering program. Powering through a
             rigorous curriculum and interning at various companies granted me
@@ -78,7 +78,7 @@ const AboutMe = () => {
           <h3 className="text-xl font-bold">
             <ArrowForwardIcon /> A Creative At Heart
           </h3>
-          <p className="opacity-75 leading-7 sm:text-base text-sm">
+          <p className="text-text-secondary leading-7 sm:text-base text-sm">
             I’ve been a creator ever since I was a child. I would spend hours
             drawing my favourite cartoon/anime characters, filling out my
             sketchbooks. As I got older, I ventured into digital art using
@@ -94,7 +94,7 @@ const AboutMe = () => {
           <h3 className="text-xl font-bold">
             <ArrowForwardIcon /> My Journey as a Developer
           </h3>
-          <p className="opacity-75 leading-7 sm:text-base text-sm">
+          <p className="text-text-secondary leading-7 sm:text-base text-sm">
             A couple years ago I eventually found myself getting into web
             development. Given my extensive background in graphic design and my
             education in Engineering I was able to catch on pretty quick and it

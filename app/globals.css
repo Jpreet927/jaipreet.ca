@@ -3,36 +3,37 @@
 @tailwind utilities;
 
 :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-    --background: #03070f;
-    --background-lighter: #060e1e;
-    --text-primary: #ffffff;
-    --text-blue: #409dea;
-    --grid-cyan: #7fe3f9;
-    --gradient-1: #0073ff;
-    --gradient-2: #0015ff;
-    --gradient-3: #83d8ff;
-    --gradient-4: #f389f3;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background: #03070f;
+  --background-lighter: #060e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #c0c1c3;
+  --text-blue: #409dea;
+  --grid-cyan: #7fe3f9;
+  --gradient-1: #0073ff;
+  --gradient-2: #0015ff;
+  --gradient-3: #83d8ff;
+  --gradient-4: #f389f3;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: var(--background);
-    color: var(--text-primary);
-    font-family: var(--font-inter);
-    max-width: 100%;
-    overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-inter);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 p,
 a {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 ::selection {
-    background: #409dea;
+  background: #409dea;
 }
